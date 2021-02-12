@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+
+
+        <EditText
+            android:id="@+id/age_box_years"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/calcs2"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:background="@color/white"
+            android:hint="@string/age_years"
+            android:importantForAutofill="no"
+            android:inputType="text|numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/calcs_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="@string/paediatric"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size" />
+
+
+
+        <TextView
+            android:id="@+id/calcs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/half_default_margin"
+            android:layout_below="@id/calcs_top"
+            android:text="@string/calculations"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/calcs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calcs"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/half_default_margin"
+            android:textColor="@color/white"
+            android:text="@string/calculations2"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/age_years"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/age_box_years"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/half_default_margin"
+            android:layout_marginTop="@dimen/half_default_margin"
+            android:text="@string/age_years"
+            android:textColor="@color/white" />
+
+
+
+        <TextView
+            android:id="@+id/weight_calc"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/age_years"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/weight_calculation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weight_calc"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/half_default_margin"
+            android:layout_marginTop="@dimen/half_default_margin"
+            android:text="@string/Weight_calc"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/calculate_paed"
+            android:layout_width="@dimen/calculate_width"
+            android:layout_height="@dimen/calculate_height"
+            android:src="@drawable/calculate"
+            android:layout_margin="@dimen/double_default_margin"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="calculation_paed"
+            android:layout_below="@id/calcs2"
+            android:contentDescription="@string/calculate_button" />
+
+        <TextView
+            android:id="@+id/tube_uncuffed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weight_calculation"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="@string/tube_size_uc"
+            android:textSize="@dimen/standard_text_size"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/tube_uncuffed_text"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/calculate_paed"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/tube_cuffed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tube_uncuffed"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:text="@string/tube_size_uc"
+            android:textSize="@dimen/standard_text_size"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tube_cuffed_text"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/tube_uncuffed_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/other_sizes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tube_cuffed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:text="@string/plus_one_size"
+            android:textSize="@dimen/standard_text_size"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/energy_text"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/other_sizes"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+        <TextView
+            android:id="@+id/crystalloid_text"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/energy_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/energy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/other_sizes"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:text="@string/energy"
+            android:textSize="@dimen/standard_text_size"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/crystalloid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/energy"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:text="@string/crystalloid"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/adrenaline_text"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/crystalloid_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+        <TextView
+            android:id="@+id/amiodarone_text"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/adrenaline_hint"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+        <TextView
+            android:id="@+id/adrenaline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crystalloid"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:text="@string/adrenaline"
+
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/adrenaline_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adrenaline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:text="@string/adrenaline_timing"
+            android:textSize="@dimen/standard_text_size"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/amiodarone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adrenaline_hint"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:text="@string/amiodarone"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/amiodarone_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amiodarone"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/standard_text_size"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:text="@string/amiodarone_timing"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/glucose_text"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/amiodarone_hint"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/glucose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amiodarone_hint"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/quad_default_margin"
+            android:text="@string/glucose"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/glucose_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/glucose"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="@string/hypo"
+            android:textSize="@dimen/standard_text_size"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/menu_button_calcs"
+            android:layout_width="@dimen/menu_button_size"
+            android:layout_height="@dimen/menu_button_size"
+            android:layout_below="@id/glucose_hint"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/menu_button"
+            android:onClick="menu_button_calcs"
+            android:layout_margin="@dimen/double_default_padding"
+            android:contentDescription="@string/menu_button" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

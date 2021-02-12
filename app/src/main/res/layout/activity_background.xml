@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/double_default_margin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/header_text_size"/>
+
+
+    <ImageView
+        android:id= "@+id/calcs_button"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/menu"
+        android:src="@drawable/paed_resus_calcs"
+        android:layout_marginTop="@dimen/double_default_margin"
+        android:onClick="calcs_button"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/paed_calcs_button_description" />
+
+    <ImageView
+        android:id= "@+id/abg_button"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/calcs_button"
+        android:src="@drawable/abg"
+        android:layout_marginTop="@dimen/double_default_margin"
+        android:onClick="abg_button"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/abg_button_description" />
+
+    <ImageView
+        android:id= "@+id/fluids_button"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/abg_button"
+        android:src="@drawable/fluids"
+        android:layout_marginTop="@dimen/double_default_margin"
+        android:onClick="fluids_button"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/fluids_button_description" />
+
+    <ImageView
+        android:id= "@+id/websites"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:src="@drawable/websites"
+        android:layout_below="@id/fluids_button"
+        android:layout_margin="@dimen/double_default_margin"
+        android:onClick="website_button"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/websites_button_description" />
+
+</RelativeLayout>
