@@ -157,7 +157,7 @@
             android:layout_marginStart="@dimen/double_default_margin"
             android:layout_marginLeft="@dimen/double_default_margin"
             android:layout_marginTop="@dimen/quad_default_margin"
-            android:text="@string/tube_size_uc"
+            android:text="@string/tube_cuffed"
             android:textSize="@dimen/standard_text_size"
             android:textColor="@color/white" />
 
@@ -287,7 +287,7 @@
             android:layout_below="@id/crystalloid"
             android:layout_marginStart="@dimen/double_default_margin"
             android:layout_marginLeft="@dimen/double_default_margin"
-            android:layout_marginTop="@dimen/quad_default_margin"
+            android:layout_marginTop="@dimen/tri_default_margin"
             android:text="@string/adrenaline"
 
             android:textColor="@color/white" />
