@@ -21,12 +21,12 @@
             android:layout_marginRight="@dimen/double_default_margin"
             android:background="@color/white"
             android:hint="@string/age_years"
+            android:gravity="center"
             android:importantForAutofill="no"
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
-            android:textSize="@dimen/default_text_size">
+            android:textSize="@dimen/default_text_size"/>
 
-        </EditText>
 
         <TextView
             android:id="@+id/calcs_top"
@@ -101,9 +101,7 @@
             android:layout_marginLeft="@dimen/half_default_margin"
             android:layout_marginTop="@dimen/half_default_margin"
             android:text="@string/Weight_calc"
-            android:textColor="@color/white">
-
-        </TextView>
+            android:textColor="@color/white"/>
 
 
         <ImageView

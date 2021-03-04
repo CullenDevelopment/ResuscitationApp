@@ -24,38 +24,82 @@
         android:src="@drawable/paed_resus_calcs"
         android:layout_marginTop="@dimen/double_default_margin"
         android:onClick="calcs_button"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/tri_default_margin"
+        android:layout_marginLeft="@dimen/tri_default_margin"
+        android:contentDescription="@string/paed_calcs_button_description" />
+    <ImageView
+        android:id= "@+id/bmi_button"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/menu"
+        android:src="@drawable/bmi_calculator"
+        android:layout_marginTop="@dimen/double_default_margin"
+        android:onClick="bmi_button"
+        android:layout_marginEnd="@dimen/tri_default_margin"
+        android:layout_marginRight="@dimen/tri_default_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:contentDescription="@string/paed_calcs_button_description" />
 
     <ImageView
-        android:id= "@+id/abg_button"
+        android:id= "@+id/converter_button"
         android:layout_width="120dp"
         android:layout_height="75dp"
         android:layout_below="@id/calcs_button"
-        android:src="@drawable/abg"
+        android:src="@drawable/metric_unit_size"
         android:layout_marginTop="@dimen/double_default_margin"
-        android:onClick="abg_button"
-        android:layout_centerHorizontal="true"
+        android:onClick="converter_button"
+        android:layout_marginStart="@dimen/tri_default_margin"
+        android:layout_marginLeft="@dimen/tri_default_margin"
         android:contentDescription="@string/abg_button_description" />
+    <ImageView
+        android:id= "@+id/metric_measurement"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/bmi_button"
+        android:src="@drawable/metric_measurement"
+        android:layout_marginTop="@dimen/double_default_margin"
+        android:onClick="metric_measurement_button"
+        android:layout_marginEnd="@dimen/tri_default_margin"
+        android:layout_marginRight="@dimen/tri_default_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/paed_calcs_button_description" />
+
 
     <ImageView
         android:id= "@+id/fluids_button"
         android:layout_width="120dp"
         android:layout_height="75dp"
-        android:layout_below="@id/abg_button"
+        android:layout_below="@id/converter_button"
         android:src="@drawable/fluids"
         android:layout_marginTop="@dimen/double_default_margin"
         android:onClick="fluids_button"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/tri_default_margin"
+        android:layout_marginLeft="@dimen/tri_default_margin"
         android:contentDescription="@string/fluids_button_description" />
+
+    <ImageView
+        android:id= "@+id/body_surface"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/metric_measurement"
+        android:src="@drawable/body_surface_area"
+        android:layout_marginTop="@dimen/double_default_margin"
+        android:onClick="bsa_button"
+        android:layout_marginEnd="@dimen/tri_default_margin"
+        android:layout_marginRight="@dimen/tri_default_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/paed_calcs_button_description" />
 
     <ImageView
         android:id= "@+id/websites"
         android:layout_width="120dp"
         android:layout_height="75dp"
         android:src="@drawable/websites"
-        android:layout_below="@id/fluids_button"
-        android:layout_margin="@dimen/double_default_margin"
+        android:layout_below="@id/body_surface"
+        android:layout_margin="@dimen/quad_default_margin"
         android:onClick="website_button"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/websites_button_description" />

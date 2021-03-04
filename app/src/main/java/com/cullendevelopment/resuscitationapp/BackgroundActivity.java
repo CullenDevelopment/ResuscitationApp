@@ -29,13 +29,6 @@ public class BackgroundActivity extends AppCompatActivity {
         startActivity(websites_menu_intent); // Menu to websites Activity
     }
 
-    public void abg_button(View view) {
-        // Create a new intent to open the {@link Menu to abg activity}
-        Intent abg_menu_intent = new Intent(BackgroundActivity.this, ABG.class);
-
-        // Start the new activity
-        startActivity(abg_menu_intent); // Menu to abg Activity
-    }
 
     public void fluids_button(View view) {
         // Create a new intent to open the {@link Menu to Fluids activity}
@@ -45,4 +38,36 @@ public class BackgroundActivity extends AppCompatActivity {
         startActivity(fluids_menu_intent); // Menu to abg Activity
     }
 
+    public void converter_button(View view) {
+        // Create a new intent to open the {@link Menu to converter activity}
+        Intent converter_menu_intent = new Intent(BackgroundActivity.this, ConverterActivity.class);
+
+        // Start the new activity
+        startActivity(converter_menu_intent); // Menu to converter Activity
+    }
+
+    public void metric_measurement_button(View view) {
+        // Create a new intent to open the {@link Menu to metric measurement Activity}
+        Intent metric_measurement_menu_intent = new Intent(BackgroundActivity.this, MetricMeasurement.class);
+
+        // Start the new activity
+        startActivity(metric_measurement_menu_intent); // Menu to metric measurement Activity
+    }
+
+
+    public void bsa_button(View view) {
+        // Create a new intent to open the {@link Menu to body surface area Activity}
+        Intent body_surface_menu_intent = new Intent(BackgroundActivity.this, BodySurfaceActivity.class);
+
+        // Start the new activity
+        startActivity(body_surface_menu_intent); // Menu to body surface area Activity
+    }
+
+    public void bmi_button(View view) {
+        // Create a new intent to open the {@link Menu to metric to imperial Activity}
+        Intent bmi_menu_intent = new Intent(BackgroundActivity.this, BMIActivity.class);
+
+        // Start the new activity
+        startActivity(bmi_menu_intent); // Menu to metric to imperial Activity
+    }
 }

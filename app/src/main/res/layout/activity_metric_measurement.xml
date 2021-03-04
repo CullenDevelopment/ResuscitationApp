@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/metric_measurement_converter1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="@string/metric_measurement"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/metric_measurement_converter2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/metric_measurement_converter1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/half_default_margin"
+            android:text="@string/conversion"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/measurements_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/metric_measurement_converter2"
+            android:text="@string/metric_measurement_conversion"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mid_text_size"
+            android:layout_marginTop="@dimen/double_default_margin"
+            />
+
+
+        <EditText
+            android:id="@+id/metres_centimetres"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/measurements_text"
+            android:layout_marginStart="@dimen/tri_default_margin"
+            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:background="@color/white"
+            android:hint="@string/metres"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="text|numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size"/>
+
+        <TextView
+            android:id="@+id/metres_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/metres_centimetres"
+            android:layout_marginStart="@dimen/tri_default_margin"
+            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="@string/metres"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size"/>
+
+
+        <TextView
+            android:id="@+id/metres_result_textview"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/measurements_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+        <TextView
+            android:id="@+id/metres_result_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/metres_result_textview"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin"
+            android:text="@string/centimetres"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+        <ImageView
+            android:id="@+id/calculate_metres"
+            android:layout_width="@dimen/small_calculate_width"
+            android:layout_height="@dimen/small_calculate_height"
+            android:src="@drawable/calculate"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_centerHorizontal="true"
+            android:onClick="calculate_metres_centimetres"
+            android:layout_below="@id/metres_label"
+            android:contentDescription="@string/calculate_button" />
+
+        <EditText
+            android:id="@+id/centimetres_metres"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/calculate_metres"
+            android:layout_marginStart="@dimen/tri_default_margin"
+            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@color/white"
+            android:hint="@string/centimetres"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="text|numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size"/>
+        <TextView
+            android:id="@+id/centimetres_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/centimetres_metres"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginStart="@dimen/tri_default_margin"
+            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:text="@string/centimetres"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+        <TextView
+            android:id="@+id/centimetres_result_textview"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/calculate_metres"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+        <TextView
+            android:id="@+id/centimetres_result_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/centimetres_result_textview"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin"
+            android:text="@string/metres"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+
+        <ImageView
+            android:id="@+id/calculate_centimetres_metres"
+            android:layout_width="@dimen/small_calculate_width"
+            android:layout_height="@dimen/small_calculate_height"
+            android:src="@drawable/calculate"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_centerHorizontal="true"
+            android:onClick="calculate_centimetres_metres"
+            android:layout_below="@id/centimetres_label"
+            android:contentDescription="@string/calculate_button" />
+
+
+        <EditText
+            android:id="@+id/metres_millimetres"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/calculate_centimetres_metres"
+            android:layout_marginStart="@dimen/tri_default_margin"
+            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:background="@color/white"
+            android:hint="@string/metres"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="text|numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size"/>
+
+        <TextView
+            android:id="@+id/metres_millimetres_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/metres_millimetres"
+            android:layout_marginStart="@dimen/tri_default_margin"
+            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="@string/metres"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size"/>
+
+
+        <TextView
+            android:id="@+id/metres_millimetres_textview"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/calculate_centimetres_metres"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+
+        <TextView
+            android:id="@+id/metres_millimetres_result_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/metres_millimetres_textview"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin"
+            android:text="@string/millimetres"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+
+        <TextView
+            android:id="@+id/millimetres_metres_textview"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/calculate_metres_millimetres"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+
+        <ImageView
+            android:id="@+id/calculate_metres_millimetres"
+            android:layout_width="@dimen/small_calculate_width"
+            android:layout_height="@dimen/small_calculate_height"
+            android:src="@drawable/calculate"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_centerHorizontal="true"
+            android:onClick="calculate_metres_millimetres"
+            android:layout_below="@id/metres_millimetres_label"
+            android:contentDescription="@string/calculate_button" />
+
+
+        <EditText
+            android:id="@+id/millimetres_metres"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/calculate_metres_millimetres"
+            android:layout_marginStart="@dimen/tri_default_margin"
+            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@color/white"
+            android:hint="@string/millimetres"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="text|numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size"/>
+        <TextView
+            android:id="@+id/millimetres_metres_result_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/millimetres_metres_textview"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin"
+            android:text="@string/metres"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+        <TextView
+            android:id="@+id/millimetres_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/millimetres_metres"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginStart="@dimen/tri_default_margin"
+            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:text="@string/millimetres"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+        <ImageView
+            android:id="@+id/calculate_millimetres_metres"
+            android:layout_width="@dimen/small_calculate_width"
+            android:layout_height="@dimen/small_calculate_height"
+            android:src="@drawable/calculate"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_centerHorizontal="true"
+            android:onClick="calculate_millimetres_metres"
+            android:layout_below="@id/millimetres_label"
+            android:contentDescription="@string/calculate_button" />
+
+        <EditText
+            android:id="@+id/centimetres_millimetres"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/calculate_millimetres_metres"
+            android:layout_marginStart="@dimen/tri_default_margin"
+            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:background="@color/white"
+            android:hint="@string/centimetres"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="text|numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size"/>
+
+        <TextView
+            android:id="@+id/centimetres_millimetres_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/centimetres_millimetres"
+            android:layout_marginStart="@dimen/tri_default_margin"
+            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:text="@string/centimetres"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size"/>
+
+        <TextView
+            android:id="@+id/centimetres_millimetres_textview"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/calculate_millimetres_metres"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+        <TextView
+            android:id="@+id/centimetres_millimetres_result_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/centimetres_millimetres_textview"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin"
+            android:text="@string/millimetres"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+
+        <ImageView
+            android:id="@+id/calculate_centimetres_millimetres"
+            android:layout_width="@dimen/small_calculate_width"
+            android:layout_height="@dimen/small_calculate_height"
+            android:src="@drawable/calculate"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_centerHorizontal="true"
+            android:onClick="calculate_centimetres_millimetres"
+            android:layout_below="@id/centimetres_millimetres_result_label"
+            android:contentDescription="@string/calculate_button" />
+
+
+        <EditText
+            android:id="@+id/millimetres_centimetres"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/calculate_centimetres_millimetres"
+            android:layout_marginStart="@dimen/tri_default_margin"
+            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@color/white"
+            android:hint="@string/millimetres"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="text|numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_text_size"/>
+        <TextView
+            android:id="@+id/millimetres_centimetres_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/millimetres_centimetres"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginStart="@dimen/tri_default_margin"
+            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:text="@string/millimetres"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+        <TextView
+            android:id="@+id/millimetres_centimetres_textview"
+            android:layout_width="@dimen/default_box_width"
+            android:layout_height="@dimen/default_box_height"
+            android:layout_below="@id/calculate_centimetres_millimetres"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size" />
+        <TextView
+            android:id="@+id/millimetres_centimetres_result_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/millimetres_centimetres_textview"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin"
+            android:text="@string/centimetres"
+            android:textColor="@color/white"
+            android:textSize="@dimen/standard_text_size" />
+        <ImageView
+            android:id="@+id/calculate_millimetres_centimetres"
+            android:layout_width="@dimen/small_calculate_width"
+            android:layout_height="@dimen/small_calculate_height"
+            android:src="@drawable/calculate"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_centerHorizontal="true"
+            android:onClick="calculation_millimetres_to_centimetres"
+            android:layout_below="@id/millimetres_centimetres_label"
+            android:contentDescription="@string/calculate_button" />
+
+        <ImageView
+            android:id="@+id/menu_button_measure_converter"
+            android:layout_width="@dimen/menu_button_size"
+            android:layout_height="@dimen/menu_button_size"
+            android:layout_below="@id/calculate_millimetres_centimetres"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/menu_button"
+            android:onClick="menu_button_metric_measurement"
+            android:layout_margin="@dimen/double_default_padding"
+            android:contentDescription="@string/menu_button" />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

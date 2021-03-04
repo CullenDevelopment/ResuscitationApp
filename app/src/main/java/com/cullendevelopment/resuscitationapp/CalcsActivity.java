@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 
 public class CalcsActivity  extends AppCompatActivity {
 
@@ -31,6 +33,8 @@ public class CalcsActivity  extends AppCompatActivity {
     public static String AMIODARONE = "AMIODARONE";
     public static String GLUCOSE = "GLUCOSE";
 
+    DecimalFormat dfCalcs = new DecimalFormat("###.#");
+
 
 
 
@@ -41,28 +45,28 @@ public class CalcsActivity  extends AppCompatActivity {
         setContentView(R.layout.activity_calcs);
 
         TextView weightTextView =  findViewById(R.id.weight_calc);
-        weightTextView.setText(String.format(String.valueOf(weight), "%.2f", weight));
+        weightTextView.setText(dfCalcs.format(weight));
 
         TextView uncuffedTubeTextView =  findViewById(R.id.tube_uncuffed_text);
-        uncuffedTubeTextView.setText(String.format(String.valueOf(uncuffedTube), "%.2f", uncuffedTube));
+        uncuffedTubeTextView.setText(dfCalcs.format(uncuffedTube));
 
         TextView cuffedTubeTextView =  findViewById(R.id.tube_cuffed_text);
-        cuffedTubeTextView.setText(String.format(String.valueOf(cuffedTube), "%.2f", cuffedTube));
+        cuffedTubeTextView.setText(dfCalcs.format(cuffedTube));
 
         TextView energyTextView =  findViewById(R.id.energy_text);
-        energyTextView.setText(String.format(String.valueOf(joules), "%.2f", joules));
+        energyTextView.setText(dfCalcs.format(joules));
 
         TextView crystalloidTextView = findViewById(R.id.crystalloid_text);
-        crystalloidTextView.setText(String.format(String.valueOf(fluid), "%.2f", fluid));
+        crystalloidTextView.setText(dfCalcs.format(fluid));
 
         TextView adrenalineTextView =  findViewById(R.id.adrenaline_text);
-        adrenalineTextView.setText(String.format(String.valueOf(adrenaline), "%.2f", adrenaline));
+        adrenalineTextView.setText(dfCalcs.format(adrenaline));
 
         TextView amiodaroneTextView =  findViewById(R.id.amiodarone_text);
-        amiodaroneTextView.setText(String.format(String.valueOf(amiodarone), "%.2f", amiodarone));
+        amiodaroneTextView.setText(dfCalcs.format(amiodarone));
 
         TextView glucoseTextView = findViewById(R.id.glucose_text);
-        glucoseTextView.setText(String.format(String.valueOf(glucose), "%.2f", glucose));
+        glucoseTextView.setText(dfCalcs.format(glucose));
 
 
     }
@@ -129,7 +133,7 @@ public class CalcsActivity  extends AppCompatActivity {
     }
 
     public void calculation_paed(View view) {
-        EditText ageYears = (EditText) findViewById(R.id.age_box_years);
+        EditText ageYears = findViewById(R.id.age_box_years);
         String ageYearsValue = ageYears.getText().toString();
         ageYearsNum = Float.parseFloat(ageYearsValue);
 
@@ -144,29 +148,29 @@ public class CalcsActivity  extends AppCompatActivity {
 
 
 
-        TextView weightDisplayTextView = findViewById(R.id.weight_calc);
-        weightDisplayTextView.setText(String.format(String.valueOf(weight), "%.2f", weight));
+        TextView weightTextView =  findViewById(R.id.weight_calc);
+        weightTextView.setText(dfCalcs.format(weight));
 
-        TextView uncuffedDisplayTextView = findViewById(R.id.tube_uncuffed_text);
-        uncuffedDisplayTextView.setText(String.format(String.valueOf(uncuffedTube), "%.2f", uncuffedTube));
+        TextView uncuffedTubeTextView =  findViewById(R.id.tube_uncuffed_text);
+        uncuffedTubeTextView.setText(dfCalcs.format(uncuffedTube));
 
-        TextView cuffedDisplayTextView = findViewById(R.id.tube_cuffed_text);
-        cuffedDisplayTextView.setText(String.format(String.valueOf(cuffedTube), "%.2f", cuffedTube));
+        TextView cuffedTubeTextView =  findViewById(R.id.tube_cuffed_text);
+        cuffedTubeTextView.setText(dfCalcs.format(cuffedTube));
 
-        TextView joulesDisplayTextView = findViewById(R.id.energy_text);
-        joulesDisplayTextView.setText(String.format(String.valueOf(joules), "%.2f", joules));
+        TextView energyTextView =  findViewById(R.id.energy_text);
+        energyTextView.setText(dfCalcs.format(joules));
 
-        TextView fluidDisplayTextView = findViewById(R.id.crystalloid_text);
-        fluidDisplayTextView.setText(String.format(String.valueOf(fluid), "%.2f", fluid));
+        TextView crystalloidTextView = findViewById(R.id.crystalloid_text);
+        crystalloidTextView.setText(dfCalcs.format(fluid));
 
-        TextView adrenalineDisplayTextView = findViewById(R.id.adrenaline_text);
-        adrenalineDisplayTextView.setText(String.format(String.valueOf(adrenaline), "%.2f", adrenaline));
+        TextView adrenalineTextView =  findViewById(R.id.adrenaline_text);
+        adrenalineTextView.setText(dfCalcs.format(adrenaline));
 
-        TextView amiodaroneDisplayTextView = findViewById(R.id.amiodarone_text);
-        amiodaroneDisplayTextView.setText(String.format(String.valueOf(amiodarone), "%.2f", amiodarone));
+        TextView amiodaroneTextView =  findViewById(R.id.amiodarone_text);
+        amiodaroneTextView.setText(dfCalcs.format(amiodarone));
 
-        TextView glucoseDisplayTextView = findViewById(R.id.glucose_text);
-        glucoseDisplayTextView.setText(String.format(String.valueOf(glucose), "%.2f", glucose));
+        TextView glucoseTextView = findViewById(R.id.glucose_text);
+        glucoseTextView.setText(dfCalcs.format(glucose));
 
 
     }
@@ -178,8 +182,8 @@ public class CalcsActivity  extends AppCompatActivity {
      * This method displays the given  calculated weight quantity value on the screen.
      */
     public void weightDisplay(double weight) {
-        TextView weightDisplayTextView = findViewById(R.id.weight_calc);
-        weightDisplayTextView.setText(String.valueOf(weight));
+        TextView weightTextView =  findViewById(R.id.weight_calc);
+        weightTextView.setText(dfCalcs.format(weight));
     }
 
 
@@ -187,52 +191,52 @@ public class CalcsActivity  extends AppCompatActivity {
      * This method displays the given uncuffed tube size on the screen.
      */
     public void uncuffedDisplay(float uncuffedTube) {
-        TextView uncuffedDisplayTextView = findViewById(R.id.tube_uncuffed_text);
-        uncuffedDisplayTextView.setText(String.valueOf(uncuffedTube));
+        TextView uncuffedTubeTextView =  findViewById(R.id.tube_uncuffed_text);
+        uncuffedTubeTextView.setText(dfCalcs.format(uncuffedTube));
     }
 
     /**
      * This method displays the given cuffed tube size on the screen.
      */
     public void cuffedDisplay(float cuffedTube) {
-        TextView cuffedDisplayTextView = findViewById(R.id.tube_cuffed_text);
-        cuffedDisplayTextView.setText(String.valueOf(cuffedTube));
+        TextView cuffedTubeTextView =  findViewById(R.id.tube_cuffed_text);
+        cuffedTubeTextView.setText(dfCalcs.format(cuffedTube));
     }
 
     /**
      * This method displays the given energy amount in joules on the screen.
      */
     public void joulesDisplay(float joules) {
-        TextView joulesDisplayTextView = findViewById(R.id.energy_text);
-        joulesDisplayTextView.setText(String.valueOf(joules));
+        TextView energyTextView =  findViewById(R.id.energy_text);
+        energyTextView.setText(dfCalcs.format(joules));
     }
     /**
      * This method displays the given crystalloid fluid amount on the screen.
      */
     public void fluidDisplay(float fluid) {
-        TextView fluidDisplayTextView = findViewById(R.id.crystalloid_text);
-        fluidDisplayTextView.setText(String.valueOf(fluid));
+        TextView crystalloidTextView = findViewById(R.id.crystalloid_text);
+        crystalloidTextView.setText(dfCalcs.format(fluid));
     }
     /**
      * This method displays the given adrenaline dose on the screen.
      */
     public void adrenalineDisplay(float adrenaline) {
-        TextView adrenalineDisplayTextView = findViewById(R.id.adrenaline_text);
-        adrenalineDisplayTextView.setText(String.valueOf(adrenaline));
+        TextView adrenalineTextView =  findViewById(R.id.adrenaline_text);
+        adrenalineTextView.setText(dfCalcs.format(adrenaline));
     }
     /**
      * This method displays the given amiodarone dose on the screen.
      */
     public void amiodaroneDisplay(float amiodarone) {
-        TextView amiodaroneDisplayTextView = findViewById(R.id.amiodarone_text);
-        amiodaroneDisplayTextView.setText(String.valueOf(amiodarone));
+        TextView amiodaroneTextView =  findViewById(R.id.amiodarone_text);
+        amiodaroneTextView.setText(dfCalcs.format(amiodarone));
     }
     /**
      * This method displays the given amiodarone dose on the screen.
      */
     public void glucoseDisplay(float glucose) {
-        TextView glucoseDisplayTextView = findViewById(R.id.glucose_text);
-        glucoseDisplayTextView.setText(String.valueOf(glucose));
+        TextView glucoseTextView = findViewById(R.id.glucose_text);
+        glucoseTextView.setText(dfCalcs.format(glucose));
     }
 
 
