@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    android:layout_width="wrap_content">
+    android:layout_width="match_parent">
 
 
     <RelativeLayout
@@ -15,17 +16,19 @@
             android:layout_width="@dimen/default_box_width"
             android:layout_height="@dimen/default_box_height"
             android:layout_below="@id/fluids2"
+
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="@dimen/quad_default_margin"
-            android:layout_marginEnd="@dimen/double_default_margin"
-            android:layout_marginRight="@dimen/double_default_margin"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="73dp"
+            android:layout_marginRight="73dp"
             android:background="@color/white"
             android:gravity="center"
             android:hint="@string/volume"
             android:importantForAutofill="no"
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
+            android:textColorHint="#78909C"
             android:textSize="@dimen/default_text_size" />
 
         <EditText
@@ -44,11 +47,29 @@
             android:importantForAutofill="no"
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
-            android:textSize="@dimen/default_text_size" />
+            android:textColorHint="#78909C"
+            android:textSize="@dimen/default_text_size"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+
+        <ImageView
+            android:id="@+id/convert_fluid_volume"
+            android:layout_width="@dimen/menu_button_size"
+            android:layout_height="@dimen/menu_button_size"
+            android:layout_below="@id/conversion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/double_default_margin"
+            android:clickable="true"
+            android:contentDescription="@string/convert_f_to_c"
+            android:focusable="true"
+            android:src="@drawable/convert" />
 
         <EditText
             android:id="@+id/time_minutes"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/default_box_width"
             android:layout_height="@dimen/default_box_height"
             android:layout_below="@id/minutes_label"
             android:layout_alignParentEnd="true"
@@ -62,18 +83,27 @@
             android:importantForAutofill="no"
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
-            android:textSize="@dimen/default_text_size" />
+            android:textColorHint="#78909C"
+            android:textSize="@dimen/default_text_size"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
         <ImageView
-            android:id="@+id/menu_button_fluids"
+            android:id="@+id/menu_fluids"
             android:layout_width="@dimen/menu_button_size"
             android:layout_height="@dimen/menu_button_size"
             android:layout_below="@id/drops_per_min_microdrop"
             android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/double_default_padding"
-            android:contentDescription="@string/menu_button"
-            android:onClick="menu_button_fluids"
-            android:src="@drawable/menu_button" />
+            android:layout_marginStart="@dimen/double_default_padding"
+            android:layout_marginLeft="@dimen/double_default_padding"
+            android:layout_marginTop="@dimen/double_default_padding"
+            android:layout_marginEnd="@dimen/double_default_padding"
+            android:layout_marginRight="@dimen/double_default_padding"
+            android:layout_marginBottom="@dimen/double_default_padding"
+            android:contentDescription="@string/menu_fluids_index"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/menu_button"
+            tools:ignore="UsingOnClickInXml" />
 
         <ImageView
             android:id="@+id/calculate_fluids"
@@ -81,9 +111,15 @@
             android:layout_height="@dimen/calculate_height"
             android:layout_below="@id/time_in_mins"
             android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/double_default_margin"
-            android:contentDescription="@string/calculate_button"
-            android:onClick="calculation_fluids"
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:layout_marginBottom="@dimen/double_default_margin"
+            android:contentDescription="@string/calculate_link"
+            android:clickable="true"
+            android:focusable="true"
             android:src="@drawable/calculate" />
 
 
@@ -195,12 +231,12 @@
             android:layout_width="@dimen/default_box_width"
             android:layout_height="@dimen/default_box_height"
             android:layout_below="@id/calculate_fluids"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/default_margin"
-            android:layout_marginEnd="@dimen/double_default_margin"
-            android:layout_marginRight="@dimen/double_default_margin"
             android:background="@color/white"
             android:gravity="center_horizontal"
             android:text="@string/number"
@@ -290,7 +326,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginTop="37dp"
             android:layout_marginEnd="@dimen/double_default_margin"
             android:layout_marginRight="@dimen/double_default_margin"
             android:background="@color/white"

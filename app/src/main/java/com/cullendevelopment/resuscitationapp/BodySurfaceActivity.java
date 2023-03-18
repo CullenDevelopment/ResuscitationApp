@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,6 +33,13 @@ public class BodySurfaceActivity extends AppCompatActivity {
 
         TextView bsaTextView = findViewById(R.id.bsa_textview);
         bsaTextView.setText(df.format(bsa));
+
+        // set onClickListeners for BSA activity
+        ImageView menu_bsa = findViewById(R.id.menu_bsa);
+        menu_bsa.setOnClickListener(this::menu_bsa);
+
+        ImageView convert_bsa = findViewById(R.id.convert_bsa);
+        convert_bsa.setOnClickListener(this::convert_bsa);
     }
 
     //Use onSaveInstanceState(Bundle) and onRestoreInstanceState
@@ -86,7 +94,7 @@ public class BodySurfaceActivity extends AppCompatActivity {
     }
 
 
-    public void menu_button_bsa(View view) {
+    public void menu_bsa(View view) {
         // Create a new intent to open the {@link body surface area calculator to Menu}
         Intent bsa_menu_intent = new Intent(BodySurfaceActivity.this, BackgroundActivity.class);
 

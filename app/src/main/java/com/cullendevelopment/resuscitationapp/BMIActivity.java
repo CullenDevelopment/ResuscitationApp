@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -62,6 +63,22 @@ public class BMIActivity extends AppCompatActivity {
 
         TextView bmiTextView =  findViewById(R.id.bmi_textview);
         bmiTextView.setText(df.format(bmi));
+
+        //sets onClickListeners for BMIActivity
+        ImageView convert_bmi = findViewById(R.id.convert_bmi);
+        convert_bmi.setOnClickListener(this::convert_bmi);
+
+        ImageView convert_weight = findViewById(R.id.convert_weight);
+        convert_weight.setOnClickListener(this::convert_weight);
+
+        ImageView convert_height = findViewById(R.id.convert_height);
+        convert_height.setOnClickListener(this::convert_height);
+
+        ImageView menu_bmi_main = findViewById(R.id.menu_bmi_main);
+        menu_bmi_main.setOnClickListener(this::menu_bmi_main);
+
+
+
     }
 
     //Use onSaveInstanceState(Bundle) and onRestoreInstanceState
@@ -180,7 +197,7 @@ public class BMIActivity extends AppCompatActivity {
         bmiTextView.setText(df.format(bmi));
     }
 
-    public void menu_button_bmi(View view) {
+    public void menu_bmi_main(View view) {
         // Create a new intent to open the {@link bmi calculator to Menu}
         Intent bmi_menu_intent = new Intent(BMIActivity.this, BackgroundActivity.class);
 

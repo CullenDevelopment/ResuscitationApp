@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Fluids extends AppCompatActivity {
@@ -51,6 +52,16 @@ public class Fluids extends AppCompatActivity {
         TextView dropsMinMicrodropTextView = findViewById(R.id.microdrop_textview);
         dropsMinMicrodropTextView.setText(String.valueOf(round_drops_min_microdrop));
 
+        //sets onClickListeners for Fluids activity
+        ImageView convert_fluids = findViewById(R.id.convert_fluid_volume);
+        convert_fluids.setOnClickListener(this::convert_fluids);
+
+        ImageView calculate_fluids = findViewById(R.id.calculate_fluids);
+        calculate_fluids.setOnClickListener(this::calculation_fluids);
+
+        ImageView menu_fluids = findViewById(R.id.menu_fluids);
+        menu_fluids.setOnClickListener(this::menu_fluids);
+
     }
 
     //Use onSaveInstanceState(Bundle) and onRestoreInstanceState
@@ -94,7 +105,7 @@ public class Fluids extends AppCompatActivity {
     }
 
 
-    public void menu_button_fluids(View view) {
+    public void menu_fluids(View view) {
         // Create a new intent to open the {@link fluids calculations to Menu}
         Intent fluids_menu_intent = new Intent(Fluids.this, BackgroundActivity.class);
 
@@ -182,7 +193,7 @@ public class Fluids extends AppCompatActivity {
     }
 
 
-    public void convert(View view) {
+    public void convert_fluids(View view) {
         EditText hours =  findViewById(R.id.hours);
         String hoursValue = hours.getText().toString();
         int hoursNum = Integer.parseInt(hoursValue);

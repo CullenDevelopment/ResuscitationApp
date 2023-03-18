@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/temperature_header"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_width="wrap_content"
+        android:text="@string/temp_conv_header"
+        android:textColor="@color/white"
+        android:textSize="@dimen/header_text_size" />
+    <TextView
+        android:id="@+id/temperature_header2"
+        android:layout_below="@id/temperature_header"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_width="wrap_content"
+        android:text="@string/temp_conv_header2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/header_text_size" />
+
+    <TextView
+        android:id="@+id/enter_text_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperature_header2"
+        android:layout_marginStart="@dimen/double_default_margin"
+        android:layout_marginLeft="@dimen/half_default_margin"
+        android:layout_marginTop="@dimen/half_default_margin"
+        android:text="@string/enter_fahrenheit"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/F_to_C_conv"
+        android:layout_width="@dimen/menu_button_size"
+        android:layout_height="@dimen/menu_button_size"
+        android:layout_below="@id/enter_text_f"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/double_default_padding"
+        android:layout_marginLeft="@dimen/double_default_padding"
+        android:layout_marginTop="@dimen/half_default_margin"
+        android:layout_marginEnd="@dimen/double_default_padding"
+        android:layout_marginRight="@dimen/double_default_padding"
+        android:layout_marginBottom="@dimen/double_default_padding"
+        android:contentDescription="@string/convert_f_to_c"
+        android:src="@drawable/convert" />
+
+
+    <EditText
+        android:id="@+id/enter_fahrenheit"
+        android:layout_below="@id/enter_text_f"
+        android:layout_width="@dimen/temp_box_size"
+        android:layout_height="@dimen/temp_box_size"
+        android:layout_marginStart="@dimen/quad_default_margin"
+        android:layout_marginLeft="@dimen/quad_default_margin"
+        android:layout_marginTop="@dimen/half_default_margin"
+        android:inputType="text|numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="#78909C"
+        android:textSize="@dimen/default_text_size"
+        android:gravity="center"
+        android:hint="@string/degrees_f"
+        android:background="@color/white"
+        android:importantForAutofill="no"
+        />
+
+    <TextView
+        android:id="@+id/centigrade_result"
+        android:layout_width="@dimen/temp_box_size"
+        android:layout_height="@dimen/temp_box_size"
+        android:layout_below="@id/centigrade_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/quad_default_margin"
+        android:layout_marginRight="@dimen/quad_default_margin"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/number"
+        android:textColor="@color/black"
+        android:textColorHint="#78909C"
+        android:textSize="@dimen/default_text_size" />
+
+    <TextView
+        android:id="@+id/centigrade_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperature_header2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/half_default_margin"
+        android:layout_marginEnd="@dimen/special_temp_text"
+        android:layout_marginRight="@dimen/special_temp_text"
+        android:layout_marginBottom="@dimen/half_default_margin"
+        android:text="@string/centigrade"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/enter_text_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_fahrenheit"
+        android:layout_marginStart="@dimen/double_default_margin"
+        android:layout_marginLeft="@dimen/half_default_margin"
+        android:layout_marginTop="@dimen/tri_default_margin"
+        android:text="@string/enter_centigrade"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/C_to_F_conv"
+        android:layout_width="@dimen/menu_button_size"
+        android:layout_height="@dimen/menu_button_size"
+        android:layout_below="@id/enter_text_c"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/double_default_padding"
+        android:layout_marginLeft="@dimen/double_default_padding"
+        android:layout_marginTop="@dimen/half_default_margin"
+        android:layout_marginEnd="@dimen/double_default_padding"
+        android:layout_marginRight="@dimen/double_default_padding"
+        android:layout_marginBottom="@dimen/double_default_padding"
+        android:contentDescription="@string/convert_c_to_f"
+        android:src="@drawable/convert" />
+
+    <EditText
+        android:id="@+id/enter_centigrade"
+        android:layout_below="@id/enter_text_c"
+        android:layout_width="@dimen/temp_box_size"
+        android:layout_height="@dimen/temp_box_size"
+        android:layout_marginStart="@dimen/quad_default_margin"
+        android:layout_marginLeft="@dimen/quad_default_margin"
+        android:layout_marginTop="@dimen/half_default_margin"
+        android:inputType="text|numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="#78909C"
+        android:textSize="@dimen/default_text_size"
+        android:gravity="center"
+        android:hint="@string/degrees_c"
+        android:background="@color/white"
+        android:importantForAutofill="no"/>
+
+    <TextView
+        android:id="@+id/fahrenheit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centigrade_result"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/tri_default_margin"
+        android:layout_marginEnd="@dimen/special_temp_text"
+        android:layout_marginRight="@dimen/special_temp_text"
+        android:text="@string/fahrenheit"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/fahrenheit_result"
+        android:layout_below="@id/fahrenheit_text"
+        android:layout_width="@dimen/temp_box_size"
+        android:layout_height="@dimen/temp_box_size"
+        android:layout_marginEnd="@dimen/quad_default_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/quad_default_margin"
+        android:layout_marginTop="@dimen/half_default_margin"
+        android:textColor="@color/black"
+        android:textColorHint="#78909C"
+        android:textSize="@dimen/default_text_size"
+        android:gravity="center"
+        android:text="@string/number"
+        android:background="@color/white"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:id="@+id/menu_temp_conv"
+        android:layout_width="@dimen/menu_button_size"
+        android:layout_height="@dimen/menu_button_size"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_below="@id/enter_centigrade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/double_default_padding"
+        android:layout_marginLeft="@dimen/double_default_padding"
+        android:layout_marginTop="@dimen/quad_default_margin"
+        android:layout_marginEnd="@dimen/double_default_padding"
+        android:layout_marginRight="@dimen/double_default_padding"
+        android:layout_marginBottom="@dimen/double_default_padding"
+        android:contentDescription="@string/menu_temp_index"
+        android:src="@drawable/menu_button" />
+
+</RelativeLayout>

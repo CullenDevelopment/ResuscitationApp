@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -8,8 +9,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/medical_calcs_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        tools:targetApi="s">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +22,6 @@
         </activity>
         <activity
             android:name=".BackgroundActivity"
-            android:label="@string/app_name"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -26,8 +29,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".CalcsActivity"
-            android:label="@string/app_name"
+            android:name=".FlaccActivity"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -36,7 +38,6 @@
         </activity>
         <activity
             android:name=".Fluids"
-            android:label="@string/app_name"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -45,16 +46,6 @@
         </activity>
         <activity
             android:name=".WebsiteActivity"
-            android:label="@string/app_name"
-            android:parentActivityName=".MainActivity">
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
-            android:name=".ConverterActivity"
-            android:label="@string/app_name"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -63,7 +54,6 @@
         </activity>
         <activity
             android:name=".BMIActivity"
-            android:label="@string/app_name"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -72,7 +62,6 @@
         </activity>
         <activity
             android:name=".BodySurfaceActivity"
-            android:label="@string/app_name"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -80,8 +69,23 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".MetricMeasurement"
-            android:label="@string/app_name"
+            android:name=".PgcsActivity"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".TempConvActivity"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".CalcsActivity"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data

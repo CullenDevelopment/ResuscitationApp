@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
@@ -52,14 +53,17 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/double_default_margin"
             android:layout_marginEnd="@dimen/tri_default_margin"
-            android:gravity="center"
             android:layout_marginRight="@dimen/tri_default_margin"
             android:background="@color/white"
+            android:gravity="center"
             android:hint="@string/pounds"
             android:importantForAutofill="no"
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
-            android:textSize="@dimen/default_text_size" />
+            android:textColorHint="#78909C"
+            android:textSize="@dimen/default_text_size"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
         <EditText
             android:id="@+id/stones"
             android:layout_width="@dimen/default_box_width"
@@ -67,16 +71,18 @@
             android:layout_below="@id/imperial_weight"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="@dimen/double_default_margin"
             android:layout_marginStart="@dimen/quad_default_margin"
             android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginTop="@dimen/double_default_margin"
             android:background="@color/white"
             android:gravity="center"
             android:hint="@string/stones"
             android:importantForAutofill="no"
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
-            android:textSize="@dimen/default_text_size" />
+            android:textColorHint="#78909C"
+            android:textSize="@dimen/default_text_size"
+            tools:ignore="DuplicateSpeakableTextCheck" />
         <TextView
             android:id="@+id/stones_label"
             android:layout_width="wrap_content"
@@ -131,17 +137,20 @@
             android:text="@string/kilogrammes"
             android:textColor="@color/white"
             android:textSize="@dimen/standard_text_size" />
+
         <ImageView
             android:id="@+id/convert_weight"
             android:layout_width="@dimen/convert_width"
             android:layout_height="@dimen/convert_height"
+            android:layout_below="@id/stones_label"
             android:layout_marginStart="@dimen/five_default_margin"
             android:layout_marginLeft="@dimen/five_default_margin"
-            android:layout_below="@id/stones_label"
-            android:src="@drawable/convert"
-            android:onClick="convert_weight"
             android:layout_marginTop="@dimen/double_default_margin"
-            android:contentDescription="@string/convert_image" />
+            android:contentDescription="@string/convert_weight"
+            android:clickable="true"
+            android:src="@drawable/convert"
+            tools:ignore="DuplicateSpeakableTextCheck,UsingOnClickInXml"
+            android:focusable="true" />
         <TextView
             android:id="@+id/imperial_height"
             android:layout_width="wrap_content"
@@ -153,6 +162,7 @@
             android:textSize="@dimen/mid_text_size"
             android:layout_marginTop="@dimen/double_default_margin"
             />
+
         <EditText
             android:id="@+id/inches"
             android:layout_width="@dimen/default_box_width"
@@ -162,14 +172,17 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/double_default_margin"
             android:layout_marginEnd="@dimen/tri_default_margin"
-            android:gravity="center"
             android:layout_marginRight="@dimen/tri_default_margin"
             android:background="@color/white"
+            android:gravity="center"
             android:hint="@string/inches"
             android:importantForAutofill="no"
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
-            android:textSize="@dimen/default_text_size" />
+            android:textColorHint="#78909C"
+            android:textSize="@dimen/default_text_size"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
         <EditText
             android:id="@+id/feet"
             android:layout_width="@dimen/default_box_width"
@@ -177,16 +190,18 @@
             android:layout_below="@id/imperial_height"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="@dimen/double_default_margin"
             android:layout_marginStart="@dimen/quad_default_margin"
             android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginTop="@dimen/double_default_margin"
             android:background="@color/white"
             android:gravity="center"
             android:hint="@string/feet"
             android:importantForAutofill="no"
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
-            android:textSize="@dimen/default_text_size" />
+            android:textColorHint="#78909C"
+            android:textSize="@dimen/default_text_size"
+            tools:ignore="DuplicateSpeakableTextCheck" />
         <TextView
             android:id="@+id/feet_label"
             android:layout_width="wrap_content"
@@ -249,9 +264,10 @@
             android:layout_marginLeft="@dimen/five_default_margin"
             android:layout_below="@id/feet_label"
             android:src="@drawable/convert"
-            android:onClick="convert_height"
+            android:clickable="true"
+            android:focusable="true"
             android:layout_marginTop="@dimen/double_default_margin"
-            android:contentDescription="@string/convert_image" />
+            android:contentDescription="@string/convert_height" />
         <TextView
             android:id="@+id/bmi_header"
             android:layout_width="wrap_content"
@@ -280,6 +296,7 @@
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
             android:textSize="@dimen/default_text_size" />
+
         <EditText
             android:id="@+id/weight_kg"
             android:layout_width="@dimen/default_box_width"
@@ -287,16 +304,18 @@
             android:layout_below="@id/bmi_header"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="@dimen/double_default_margin"
             android:layout_marginStart="@dimen/quad_default_margin"
             android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginTop="@dimen/double_default_margin"
             android:background="@color/white"
             android:gravity="center"
             android:hint="@string/weight_kg"
             android:importantForAutofill="no"
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
-            android:textSize="@dimen/default_text_size" />
+            android:textColorHint="#78909C"
+            android:textSize="@dimen/default_text_size"
+            tools:ignore="DuplicateSpeakableTextCheck" />
         <TextView
             android:id="@+id/weight_kg_label"
             android:layout_width="wrap_content"
@@ -359,19 +378,26 @@
             android:layout_marginLeft="@dimen/tri_default_margin"
             android:layout_below="@id/weight_kg_label"
             android:src="@drawable/calculate"
-            android:onClick="convert_bmi"
+            android:clickable="true"
+            android:focusable="true"
             android:layout_marginTop="@dimen/double_default_margin"
-            android:contentDescription="@string/convert_image" />
+            android:contentDescription="@string/convert_bmi" />
 
         <ImageView
-            android:id="@+id/menu_button_bmi"
+            android:id="@+id/menu_bmi_main"
             android:layout_width="@dimen/menu_button_size"
             android:layout_height="@dimen/menu_button_size"
             android:layout_below="@id/bmi_label"
             android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/double_default_padding"
-            android:contentDescription="@string/menu_button"
-            android:onClick="menu_button_bmi"
+            android:layout_marginStart="@dimen/double_default_padding"
+            android:layout_marginLeft="@dimen/double_default_padding"
+            android:layout_marginTop="@dimen/double_default_padding"
+            android:layout_marginEnd="@dimen/double_default_padding"
+            android:layout_marginRight="@dimen/double_default_padding"
+            android:layout_marginBottom="@dimen/double_default_padding"
+            android:contentDescription="@string/menu_link_bmi"
+            android:clickable="true"
+            android:focusable="true"
             android:src="@drawable/menu_button" />
     </RelativeLayout>
 

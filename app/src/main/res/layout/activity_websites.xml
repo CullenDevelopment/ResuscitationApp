@@ -30,23 +30,25 @@
         android:id="@+id/alsg"
         android:layout_width="@dimen/default_website_button_w"
         android:layout_height="@dimen/default_website_button_h"
-        android:layout_marginTop="@dimen/quad_default_margin"
+        android:layout_marginTop="@dimen/tri_default_margin"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/websites"
         android:src="@drawable/alsg"
-        android:onClick="alsg"
-        android:contentDescription="@string/alsg_button" />
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/alsg" />
 
     <ImageView
         android:id="@+id/aim"
         android:layout_width="@dimen/default_website_button_w"
         android:layout_height="@dimen/default_website_button_h"
         android:layout_below="@id/alsg"
-        android:layout_marginTop="@dimen/quad_default_margin"
+        android:layout_marginTop="@dimen/tri_default_margin"
         android:layout_centerHorizontal="true"
         android:src="@drawable/aim_logo"
-        android:onClick="aim"
-        android:contentDescription="@string/aim_button" />
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/aim" />
 
     <ImageView
         android:id="@+id/resus"
@@ -56,20 +58,26 @@
         android:layout_marginTop="@dimen/tri_default_margin"
         android:layout_centerHorizontal="true"
         android:src="@drawable/resus"
-        android:onClick="resus"
-        android:contentDescription="@string/resus_button" />
-
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/resus_council" />
 
 
     <ImageView
-        android:id="@+id/menu_button_websites"
+        android:id="@+id/websites_to_menu"
         android:layout_width="@dimen/menu_button_size"
         android:layout_height="@dimen/menu_button_size"
         android:layout_below="@id/resus"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/menu_button"
-        android:onClick="menu_button_websites"
-        android:layout_margin="@dimen/tri_default_padding"
-        android:contentDescription="@string/menu_button"/>
+        android:layout_marginStart="@dimen/tri_default_padding"
+        android:layout_marginLeft="@dimen/tri_default_padding"
+        android:layout_marginTop="@dimen/tri_default_padding"
+        android:layout_marginEnd="@dimen/tri_default_padding"
+        android:layout_marginRight="@dimen/tri_default_padding"
+        android:layout_marginBottom="@dimen/tri_default_padding"
+        android:clickable="true"
+        android:contentDescription="@string/menu_web_index"
+        android:focusable="true"
+        android:src="@drawable/menu_button" />
 
 </RelativeLayout>

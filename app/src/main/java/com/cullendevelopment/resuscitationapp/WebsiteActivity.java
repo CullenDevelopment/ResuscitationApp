@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 
 public class WebsiteActivity  extends AppCompatActivity {
 
@@ -13,10 +14,24 @@ public class WebsiteActivity  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_websites);
 
+        //sets onClickListeners for Website Activity do we need more websites adding?
+
+        ImageView alsg = findViewById(R.id.alsg);
+        alsg.setOnClickListener(this::alsg);
+
+        ImageView aim = findViewById(R.id.aim);
+        aim.setOnClickListener(this::aim);
+
+        ImageView resus = findViewById(R.id.resus);
+        resus.setOnClickListener(this::resus);
+
+        ImageView websites_to_menu = findViewById(R.id.websites_to_menu);
+        websites_to_menu.setOnClickListener(this::websites_to_menu);
+
 
     }
 
-    public void menu_button_websites(View view) {
+    public void websites_to_menu(View view) {
         // Create a new intent to open the {@link Useful websites to Menu}
         Intent websites_menu_intent = new Intent(WebsiteActivity.this, BackgroundActivity.class);
 

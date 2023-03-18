@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -7,7 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary">
-
 
 
         <EditText
@@ -20,12 +20,14 @@
             android:layout_marginTop="@dimen/double_default_margin"
             android:layout_marginRight="@dimen/double_default_margin"
             android:background="@color/white"
-            android:hint="@string/age_years"
             android:gravity="center"
+            android:hint="@string/age_years"
             android:importantForAutofill="no"
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
-            android:textSize="@dimen/default_text_size"/>
+            android:textColorHint="#78909C"
+            android:textSize="@dimen/default_text_size"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
 
         <TextView
@@ -108,13 +110,20 @@
             android:id="@+id/calculate_paed"
             android:layout_width="@dimen/calculate_width"
             android:layout_height="@dimen/calculate_height"
-            android:src="@drawable/calculate"
-            android:layout_margin="@dimen/double_default_margin"
+            android:layout_below="@id/calcs2"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:onClick="calculation_paed"
-            android:layout_below="@id/calcs2"
-            android:contentDescription="@string/calculate_button" />
+            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin"
+            android:layout_marginTop="@dimen/double_default_margin"
+            android:layout_marginEnd="@dimen/double_default_margin"
+            android:layout_marginRight="@dimen/double_default_margin"
+            android:layout_marginBottom="@dimen/double_default_margin"
+            android:contentDescription="@string/calculate_link"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/calculate"
+            tools:ignore="RedundantDescriptionCheck,UsingOnClickInXml" />
 
         <TextView
             android:id="@+id/tube_uncuffed"
@@ -363,15 +372,21 @@
             android:textColor="@color/white" />
 
         <ImageView
-            android:id="@+id/menu_button_calcs"
+            android:id="@+id/menu_link_calcs"
             android:layout_width="@dimen/menu_button_size"
             android:layout_height="@dimen/menu_button_size"
             android:layout_below="@id/glucose_hint"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/menu_button"
-            android:onClick="menu_button_calcs"
-            android:layout_margin="@dimen/double_default_padding"
-            android:contentDescription="@string/menu_button" />
+            android:layout_marginStart="@dimen/double_default_padding"
+            android:layout_marginLeft="@dimen/double_default_padding"
+            android:layout_marginTop="@dimen/double_default_padding"
+            android:layout_marginEnd="@dimen/double_default_padding"
+            android:layout_marginRight="@dimen/double_default_padding"
+            android:layout_marginBottom="@dimen/double_default_padding"
+            android:contentDescription="@string/menu_calcs_index"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/menu_button" />
 
     </RelativeLayout>
 

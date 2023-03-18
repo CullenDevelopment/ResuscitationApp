@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
@@ -68,6 +69,13 @@ public class CalcsActivity  extends AppCompatActivity {
         TextView glucoseTextView = findViewById(R.id.glucose_text);
         glucoseTextView.setText(dfCalcs.format(glucose));
 
+        // sets onClickListeners for calcs activity
+        ImageView calculate_paed = findViewById(R.id.calculate_paed);
+        calculate_paed.setOnClickListener(this::calculation_paed);
+
+        ImageView menu_link_calcs = findViewById(R.id.menu_link_calcs);
+        menu_link_calcs.setOnClickListener(this::menu_link_calcs);
+
 
     }
 
@@ -124,7 +132,7 @@ public class CalcsActivity  extends AppCompatActivity {
     }
 
 
-    public void menu_button_calcs(View view) {
+    public void menu_link_calcs(View view) {
         // Create a new intent to open the {@link paed resus calculations to Menu}
         Intent calcs_menu_intent = new Intent(CalcsActivity.this, BackgroundActivity.class);
 
