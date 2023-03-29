@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gcs_calculator"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_large"
+            android:layout_width="wrap_content"
+            android:text="@string/gcs_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size_xlarge" />
+
+        <TextView
+            android:id="@+id/feature_eye"
+            android:layout_below="@id/gcs_calculator"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin_large"
+            android:layout_marginStart="@dimen/default_margin_large"
+            android:layout_marginTop="@dimen/default_margin_large"
+            android:layout_width="wrap_content"
+            android:text="@string/eye_opening"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_xlarge" />
+
+
+
+        <RadioGroup
+            android:id="@+id/eye_opening_group"
+            android:layout_below="@id/feature_eye"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/spontaneously"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin_xlarge"
+                android:minHeight="48dp"
+                android:text="@string/openSpontaneously"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+            <RadioButton
+                android:id="@+id/to_speech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:minHeight="48dp"
+                android:text="@string/to_speech"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+            <RadioButton
+                android:id="@+id/to_pain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:minHeight="48dp"
+                android:text="@string/to_pain"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+            <RadioButton
+                android:id="@+id/no_response_eye_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:minHeight="48dp"
+                android:text="@string/no_response_eye"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/feature_verbal"
+            android:layout_below="@id/eye_opening_group"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin_xlarge"
+            android:layout_marginStart="@dimen/default_margin_xlarge"
+            android:layout_marginTop="@dimen/default_margin_large"
+            android:layout_width="wrap_content"
+            android:text="@string/verbal_response"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_xlarge" />
+
+        <TextView
+            android:id="@+id/less_than_two"
+            android:layout_below="@id/feature_verbal"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin_xlarge"
+            android:layout_marginStart="@dimen/default_margin_xlarge"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_width="wrap_content"
+            android:text="@string/less_than_two_years"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+        <RadioGroup
+            android:id="@+id/verbal_response_group"
+            android:layout_below="@id/less_than_two"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/orientated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin_xlarge"
+                android:minHeight="48dp"
+                android:text="@string/orientated_A"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+            <RadioButton
+                android:id="@+id/confused"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:minHeight="48dp"
+                android:text="@string/confused_A"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+            <RadioButton
+                android:id="@+id/inappropriate_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:minHeight="48dp"
+                android:text="@string/inappropriate_words_A"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+            <RadioButton
+                android:id="@+id/incomprehensible_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:minHeight="48dp"
+                android:text="@string/incomprehensible_words_A"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+            <RadioButton
+                android:id="@+id/no_response_verbal"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/no_response_v"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/feature_motor"
+            android:layout_below="@id/verbal_response_group"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin_xlarge"
+            android:layout_marginStart="@dimen/default_margin_xlarge"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_width="wrap_content"
+            android:text="@string/motor_response"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_xlarge" />
+
+        <RadioGroup
+            android:id="@+id/motor_response_group"
+            android:layout_below="@id/feature_motor"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/obeys_commands"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/obeys_commands"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+            <RadioButton
+                android:id="@+id/localises_pain"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/localises_pain"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+            <RadioButton
+                android:id="@+id/withdraws"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/withdraws_from_pain"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+            <RadioButton
+                android:id="@+id/flexion"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/flexion_to_pain"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+            <RadioButton
+                android:id="@+id/extension"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/extension_to_pain"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+            <RadioButton
+                android:id="@+id/no_response_pain"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_xlarge"
+                android:layout_marginStart="@dimen/default_margin_xlarge"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/no_response_motor"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text_size_gcs_xlarge" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/gcs_reveal"
+            android:layout_below="@id/motor_response_group"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/quad_default_margin_xlarge"
+            android:layout_marginStart="@dimen/quad_default_margin_xlarge"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_width="wrap_content"
+            android:text="@string/gcs_is"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_text_size_xlarge" />
+
+        <TextView
+            android:id="@+id/score_box"
+            android:layout_width="@dimen/smaller_box_width_large"
+            android:layout_height="@dimen/default_box_height_large"
+            android:layout_below="@id/motor_response_group"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/default_margin_xlarge"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/gcs_reveal2"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/int_number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/header_text_size_large"
+            android:layout_toStartOf="@id/gcs_reveal2"
+            android:layout_marginEnd="@dimen/default_margin_xlarge" />
+
+        <TextView
+            android:id="@+id/gcs_reveal2"
+            android:layout_below="@id/motor_response_group"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/quad_default_margin_large"
+            android:layout_marginEnd="@dimen/quad_default_margin_large"
+            android:layout_width="wrap_content"
+            android:text="@string/out_of_15"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_text_size_large"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/reveal_score"
+            android:layout_below="@id/gcs_reveal"
+            android:layout_toLeftOf="@id/menu_pgcs"
+            android:clickable="true"
+            android:layout_height="@dimen/menu_button_size_large"
+            android:layout_marginLeft="@dimen/default_margin_large"
+            android:layout_marginRight="@dimen/double_default_margin_large"
+            android:layout_marginTop="@dimen/double_default_margin_large"
+            android:layout_width="@dimen/menu_button_size_large"
+            android:src="@drawable/calculate_gcs"
+            android:layout_marginBottom="@dimen/double_default_padding_large"
+            android:focusable="true"
+            android:contentDescription="@string/gcs_reveal_link"
+            tools:ignore="UsingOnClickInXml"
+            android:layout_toStartOf="@id/menu_pgcs"
+            android:layout_marginStart="@dimen/default_margin_large"
+            android:layout_marginEnd="@dimen/double_default_margin_large" />
+
+
+
+        <ImageView
+            android:id="@+id/menu_pgcs"
+            android:layout_below="@id/gcs_reveal"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:layout_height="@dimen/menu_button_size_large"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginTop="@dimen/double_default_margin_large"
+            android:layout_width="@dimen/menu_button_size_large"
+            android:src="@drawable/menu_button"
+            android:layout_marginBottom="@dimen/double_default_padding_large"
+            android:focusable="true"
+            android:contentDescription="@string/menu_link"
+            tools:ignore="UsingOnClickInXml" />
+    </RelativeLayout>
+</ScrollView>

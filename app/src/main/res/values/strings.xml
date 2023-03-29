@@ -17,9 +17,9 @@
     <string name = "number" translatable="false">0.0</string>
     <string name="int_number" translatable="false">0</string>
     <string name="energy">DC Shock (Joules) 4 J/kg:</string>
-    <string name="crystalloid">Crystalloid Fluids (ml) 20ml/kg</string>
-    <string name="adrenaline">Adrenaline (1:10,000) 10 mcg/kg </string>
-    <string name="amiodarone">Amiodarone 5 mg/kg iv/io</string>
+    <string name="crystalloid">Crystalloid Fluids 20ml/kg (ml)</string>
+    <string name="adrenaline">Adrenaline (1:10,000) 10 mcg/kg (mcg)</string>
+    <string name="amiodarone">Amiodarone 5 mg/kg iv/io (mg)</string>
     <string name="adrenaline_timing">Every 3 to 5 minutes</string>
     <string name="amiodarone_timing">After third and fifth DC Shock</string>
     <string name="glucose">Glucose 5 ml/kg 10%</string>
@@ -162,5 +162,9 @@
     <string name="copyright">Merkel et al, 1997.</string>
     <string name="news2_head_text_1">News2</string>
     <string name="news2_head_text_2">National Early Warning Score (v2)</string>
+    <string name="gcs_reveal_link">reveal gcs score</string>
+    <string name="bmi_calculator_long_text">Body Mass Index Calculator</string>
+    <string name="bsa_calculator_long_text">Body Surface Area Calculator</string>
+    <string name="paed_calcs_long_text">Paediatric Resuscitation Calculations</string>
 
 </resources>

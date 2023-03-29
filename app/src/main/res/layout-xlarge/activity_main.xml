@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/paed_cross"
+        android:layout_width="@dimen/splash_image_size_large"
+        android:layout_height="@dimen/splash_image_size_large"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/default_margin_large"
+        android:layout_marginBottom="@dimen/default_margin_large"
+        android:contentDescription="@string/front_image"
+        android:src="@drawable/paed" />
+    <TextView
+        style="@style/splash_style"
+        android:id="@+id/paediatric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/splash_1"
+        android:textSize="@dimen/default_text_size_large"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/paed_cross"
+        />
+    <TextView
+        style="@style/splash_style"
+        android:id="@+id/nursing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/splash_2"
+        android:textSize="@dimen/default_text_size_large"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/paediatric"
+        />
+    <TextView
+        style="@style/splash_style"
+        android:id="@+id/calculations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/splash_3"
+        android:textSize="@dimen/default_text_size_large"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nursing"
+        />
+
+    <ImageView
+        android:id="@+id/start"
+        android:layout_width="@dimen/default_box_width_large"
+        android:layout_height="@dimen/default_box_height_large"
+        android:layout_below="@id/calculations"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/tri_default_margin"
+        android:contentDescription="@string/start_image"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/start_button"
+        tools:ignore="RedundantDescriptionCheck" />
+
+
+</RelativeLayout>

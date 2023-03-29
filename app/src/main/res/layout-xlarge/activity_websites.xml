@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/useful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/default_margin_large"
+        android:text="@string/useful"
+        android:textColor="@color/white"
+        android:textSize="@dimen/header_text_size_large" />
+
+    <TextView
+        android:id="@+id/websites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/useful"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/half_default_margin_large"
+        android:text="@string/websites"
+        android:textColor="@color/white"
+        android:textSize="@dimen/header_text_size_large" />
+
+    <ImageView
+        android:id="@+id/alsg"
+        android:layout_width="@dimen/default_website_button_w"
+        android:layout_height="@dimen/default_website_button_h"
+        android:layout_marginTop="@dimen/tri_default_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/websites"
+        android:src="@drawable/alsg"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/alsg" />
+
+    <ImageView
+        android:id="@+id/aim"
+        android:layout_width="@dimen/default_website_button_w"
+        android:layout_height="@dimen/default_website_button_h"
+        android:layout_below="@id/alsg"
+        android:layout_marginTop="@dimen/tri_default_margin"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/aim_logo"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/aim" />
+
+    <ImageView
+        android:id="@+id/resus"
+        android:layout_width="@dimen/default_website_button_w"
+        android:layout_height="@dimen/default_website_button_h"
+        android:layout_below="@id/aim"
+        android:layout_marginTop="@dimen/tri_default_margin"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/resus"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/resus_council" />
+
+
+    <ImageView
+        android:id="@+id/websites_to_menu"
+        android:layout_width="@dimen/menu_button_size"
+        android:layout_height="@dimen/menu_button_size"
+        android:layout_below="@id/resus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/tri_default_padding"
+        android:layout_marginLeft="@dimen/tri_default_padding"
+        android:layout_marginTop="@dimen/tri_default_padding"
+        android:layout_marginEnd="@dimen/tri_default_padding"
+        android:layout_marginRight="@dimen/tri_default_padding"
+        android:layout_marginBottom="@dimen/tri_default_padding"
+        android:clickable="true"
+        android:contentDescription="@string/menu_web_index"
+        android:focusable="true"
+        android:src="@drawable/menu_button" />
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/double_default_margin_xlarge"
+        android:layout_marginStart="@dimen/double_default_margin_large"
+        android:layout_marginLeft="@dimen/double_default_margin_large"
+        android:layout_marginTop="@dimen/double_default_margin_large"
+        android:layout_marginEnd="@dimen/double_default_margin_large"
+        android:layout_marginRight="@dimen/double_default_margin_large"
+        android:layout_marginBottom="@dimen/double_default_margin_large"
+        android:text="@string/menu"
+        android:textColor="@color/white"
+        android:textSize="@dimen/header_text_size_xlarge" />
+
+
+    <ImageView
+        android:id= "@+id/calcs_paed"
+        android:layout_width="@dimen/link_width_large"
+        android:layout_height="@dimen/link_height_large"
+        android:layout_below="@id/menu"
+        android:src="@drawable/paed_resus_calcs"
+        android:layout_marginTop="@dimen/default_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginStart="@dimen/quad_default_margin_large"
+        android:layout_marginLeft="@dimen/quad_default_margin_large"
+        android:contentDescription="@string/paed_calcs_description" />
+
+
+    <ImageView
+        android:id= "@+id/bmi"
+        android:layout_width="@dimen/link_width_large"
+        android:layout_height="@dimen/link_height_large"
+        android:layout_below="@id/menu"
+        android:src="@drawable/bmi_calculator"
+        android:layout_marginTop="@dimen/default_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="@dimen/quad_default_margin_large"
+        android:layout_marginRight="@dimen/quad_default_margin_large"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/paed_calcs_description_bmi" />
+
+    <ImageView
+        android:id="@+id/flacc"
+        android:layout_width="@dimen/link_width_large"
+        android:layout_height="@dimen/link_height_large"
+        android:layout_below="@id/calcs_paed"
+        android:layout_marginStart="@dimen/quad_default_margin_large"
+        android:layout_marginLeft="@dimen/quad_default_margin_large"
+        android:layout_marginTop="@dimen/double_default_margin"
+        android:clickable="true"
+        android:contentDescription="@string/abg_description"
+        android:focusable="true"
+        android:src="@drawable/flacc"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+
+    <ImageView
+        android:id="@+id/fluids"
+        android:layout_width="@dimen/link_width_large"
+        android:layout_height="@dimen/link_height_large"
+        android:layout_below="@id/flacc"
+        android:layout_marginStart="@dimen/quad_default_margin_large"
+        android:layout_marginLeft="@dimen/quad_default_margin_large"
+        android:layout_marginTop="@dimen/double_default_margin"
+        android:contentDescription="@string/fluids_description"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/fluids"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/body_surface"
+        android:layout_width="@dimen/link_width_large"
+        android:layout_height="@dimen/link_height_large"
+        android:layout_below="@id/bmi"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/double_default_margin"
+        android:layout_marginEnd="@dimen/quad_default_margin_large"
+        android:layout_marginRight="@dimen/quad_default_margin_large"
+        android:clickable="true"
+        android:contentDescription="@string/paed_calcs_description_bsa"
+        android:focusable="true"
+        android:src="@drawable/body_surface_area"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/gcs_view"
+        android:layout_width="@dimen/link_width_large"
+        android:layout_height="@dimen/link_height_large"
+        android:layout_below="@id/temp_conversion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/double_default_margin_xlarge"
+        android:contentDescription="@string/gcs_text"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/gcs" />
+
+    <ImageView
+        android:id="@+id/temp_conversion"
+        android:layout_width="@dimen/link_width_large"
+        android:layout_height="@dimen/link_height_large"
+        android:layout_below="@id/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/double_default_margin_xlarge"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/temperature_scale_conversion"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/websites"
+        android:layout_width="@dimen/link_width_large"
+        android:layout_height="@dimen/link_height_large"
+        android:layout_below="@id/body_surface"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/quad_default_margin_large"
+        android:layout_marginRight="@dimen/quad_default_margin_large"
+        android:layout_marginTop="@dimen/double_default_margin"
+        android:contentDescription="@string/websites_description"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/websites" />
+
+</RelativeLayout>

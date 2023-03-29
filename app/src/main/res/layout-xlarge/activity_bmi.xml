@@ -16,10 +16,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin_xlarge"
             android:text="@string/bmi_calculator"
             android:textColor="@color/white"
-            android:textSize="@dimen/header_text_size" />
+            android:textSize="@dimen/header_text_size_large" />
 
         <TextView
             android:id="@+id/bmi_calculator2"
@@ -30,7 +30,7 @@
             android:layout_marginTop="@dimen/half_default_margin"
             android:text="@string/calculator"
             android:textColor="@color/white"
-            android:textSize="@dimen/header_text_size" />
+            android:textSize="@dimen/header_text_size_large" />
 
         <TextView
             android:id="@+id/imperial_weight"
@@ -40,20 +40,20 @@
             android:text="@string/convert_imperial_weight"
             android:layout_centerHorizontal="true"
             android:textColor="@color/white"
-            android:textSize="@dimen/mid_text_size"
+            android:textSize="@dimen/mid_text_size_xlarge"
             android:layout_marginTop="@dimen/double_default_margin"
             />
 
         <EditText
             android:id="@+id/pounds"
-            android:layout_width="@dimen/default_box_width"
-            android:layout_height="@dimen/default_box_height"
+            android:layout_width="@dimen/default_box_width_xlarge"
+            android:layout_height="@dimen/default_box_height_xlarge"
             android:layout_below="@id/imperial_weight"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/double_default_margin"
-            android:layout_marginEnd="@dimen/tri_default_margin"
-            android:layout_marginRight="@dimen/tri_default_margin"
+            android:layout_marginEnd="@dimen/tri_default_margin_xlarge"
+            android:layout_marginRight="@dimen/tri_default_margin_xlarge"
             android:background="@color/white"
             android:gravity="center"
             android:hint="@string/pounds"
@@ -61,18 +61,18 @@
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
             android:textColorHint="#78909C"
-            android:textSize="@dimen/default_text_size"
+            android:textSize="@dimen/default_text_size_xlarge"
             tools:ignore="DuplicateSpeakableTextCheck" />
 
         <EditText
             android:id="@+id/stones"
-            android:layout_width="@dimen/default_box_width"
-            android:layout_height="@dimen/default_box_height"
+            android:layout_width="@dimen/default_box_width_xlarge"
+            android:layout_height="@dimen/default_box_height_xlarge"
             android:layout_below="@id/imperial_weight"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginStart="@dimen/quad_default_margin"
-            android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginStart="@dimen/quad_default_margin_xlarge"
+            android:layout_marginLeft="@dimen/quad_default_margin_xlarge"
             android:layout_marginTop="@dimen/double_default_margin"
             android:background="@color/white"
             android:gravity="center"
@@ -81,19 +81,19 @@
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
             android:textColorHint="#78909C"
-            android:textSize="@dimen/default_text_size"
+            android:textSize="@dimen/default_text_size_xlarge"
             tools:ignore="DuplicateSpeakableTextCheck" />
         <TextView
             android:id="@+id/stones_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/stones"
-            android:layout_marginStart="@dimen/quad_default_margin"
-            android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginStart="@dimen/quad_default_margin_xlarge"
+            android:layout_marginLeft="@dimen/quad_default_margin_xlarge"
             android:layout_marginTop="@dimen/half_default_margin"
             android:text="@string/stones"
             android:textColor="@color/white"
-            android:textSize="@dimen/standard_text_size" />
+            android:textSize="@dimen/standard_text_size_xlarge" />
         <TextView
             android:id="@+id/pounds_label"
             android:layout_width="wrap_content"
@@ -102,28 +102,28 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/half_default_margin"
-            android:layout_marginEnd="@dimen/quad_default_margin"
-            android:layout_marginRight="@dimen/quad_default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin_xlarge"
+            android:layout_marginRight="@dimen/quad_default_margin_xlarge"
             android:text="@string/pounds"
             android:textColor="@color/white"
-            android:textSize="@dimen/standard_text_size" />
+            android:textSize="@dimen/standard_text_size_xlarge" />
         <TextView
             android:id="@+id/kg_textview"
-            android:layout_width="@dimen/default_box_width"
-            android:layout_height="@dimen/default_box_height"
+            android:layout_width="@dimen/default_box_width_xlarge"
+            android:layout_height="@dimen/default_box_height_xlarge"
             android:layout_below="@id/pounds_label"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/double_default_margin"
-            android:layout_marginEnd="@dimen/tri_default_margin"
-            android:layout_marginRight="@dimen/tri_default_margin"
+            android:layout_marginEnd="@dimen/tri_default_margin_xlarge"
+            android:layout_marginRight="@dimen/tri_default_margin_xlarge"
             android:background="@color/white"
             android:gravity="center_horizontal"
             android:text="@string/number"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="@dimen/header_text_size" />
+            android:textSize="@dimen/header_text_size_xlarge" />
         <TextView
             android:id="@+id/kg_label"
             android:layout_width="wrap_content"
@@ -132,19 +132,19 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/half_default_margin"
-            android:layout_marginEnd="@dimen/tri_default_margin"
-            android:layout_marginRight="@dimen/tri_default_margin"
+            android:layout_marginEnd="@dimen/tri_default_margin_xlarge"
+            android:layout_marginRight="@dimen/tri_default_margin_xlarge"
             android:text="@string/kilogrammes"
             android:textColor="@color/white"
-            android:textSize="@dimen/standard_text_size" />
+            android:textSize="@dimen/standard_text_size_xlarge" />
 
         <ImageView
             android:id="@+id/convert_weight"
-            android:layout_width="@dimen/convert_width"
-            android:layout_height="@dimen/convert_height"
+            android:layout_width="@dimen/convert_width_xlarge"
+            android:layout_height="@dimen/convert_height_xlarge"
             android:layout_below="@id/stones_label"
-            android:layout_marginStart="@dimen/five_default_margin"
-            android:layout_marginLeft="@dimen/five_default_margin"
+            android:layout_marginStart="@dimen/five_default_margin_xlarge"
+            android:layout_marginLeft="@dimen/five_default_margin_xlarge"
             android:layout_marginTop="@dimen/double_default_margin"
             android:contentDescription="@string/convert_weight"
             android:clickable="true"
@@ -159,14 +159,14 @@
             android:text="@string/convert_imperial_height"
             android:layout_centerHorizontal="true"
             android:textColor="@color/white"
-            android:textSize="@dimen/mid_text_size"
+            android:textSize="@dimen/mid_text_size_xlarge"
             android:layout_marginTop="@dimen/double_default_margin"
             />
 
         <EditText
             android:id="@+id/inches"
-            android:layout_width="@dimen/default_box_width"
-            android:layout_height="@dimen/default_box_height"
+            android:layout_width="@dimen/default_box_width_xlarge"
+            android:layout_height="@dimen/default_box_height_xlarge"
             android:layout_below="@id/imperial_height"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
@@ -180,18 +180,18 @@
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
             android:textColorHint="#78909C"
-            android:textSize="@dimen/default_text_size"
+            android:textSize="@dimen/default_text_size_xlarge"
             tools:ignore="DuplicateSpeakableTextCheck" />
 
         <EditText
             android:id="@+id/feet"
-            android:layout_width="@dimen/default_box_width"
-            android:layout_height="@dimen/default_box_height"
+            android:layout_width="@dimen/default_box_width_xlarge"
+            android:layout_height="@dimen/default_box_height_xlarge"
             android:layout_below="@id/imperial_height"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginStart="@dimen/quad_default_margin"
-            android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginStart="@dimen/quad_default_margin_xlarge"
+            android:layout_marginLeft="@dimen/quad_default_margin_xlarge"
             android:layout_marginTop="@dimen/double_default_margin"
             android:background="@color/white"
             android:gravity="center"
@@ -200,19 +200,19 @@
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
             android:textColorHint="#78909C"
-            android:textSize="@dimen/default_text_size"
+            android:textSize="@dimen/default_text_size_xlarge"
             tools:ignore="DuplicateSpeakableTextCheck" />
         <TextView
             android:id="@+id/feet_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/feet"
-            android:layout_marginStart="@dimen/quad_default_margin"
-            android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginStart="@dimen/quad_default_margin_xlarge"
+            android:layout_marginLeft="@dimen/quad_default_margin_xlarge"
             android:layout_marginTop="@dimen/half_default_margin"
             android:text="@string/feet"
             android:textColor="@color/white"
-            android:textSize="@dimen/standard_text_size" />
+            android:textSize="@dimen/standard_text_size_xlarge" />
         <TextView
             android:id="@+id/inches_label"
             android:layout_width="wrap_content"
@@ -221,28 +221,28 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/half_default_margin"
-            android:layout_marginEnd="@dimen/quad_default_margin"
-            android:layout_marginRight="@dimen/quad_default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin_xlarge"
+            android:layout_marginRight="@dimen/quad_default_margin_xlarge"
             android:text="@string/inches"
             android:textColor="@color/white"
-            android:textSize="@dimen/standard_text_size" />
+            android:textSize="@dimen/standard_text_size_xlarge" />
         <TextView
             android:id="@+id/imperial_metres_textview"
-            android:layout_width="@dimen/default_box_width"
-            android:layout_height="@dimen/default_box_height"
+            android:layout_width="@dimen/default_box_width_xlarge"
+            android:layout_height="@dimen/default_box_height_xlarge"
             android:layout_below="@id/inches_label"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/double_default_margin"
-            android:layout_marginEnd="@dimen/tri_default_margin"
-            android:layout_marginRight="@dimen/tri_default_margin"
+            android:layout_marginEnd="@dimen/tri_default_margin_xlarge"
+            android:layout_marginRight="@dimen/tri_default_margin_xlarge"
             android:background="@color/white"
             android:gravity="center_horizontal"
             android:text="@string/number"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="@dimen/header_text_size" />
+            android:textSize="@dimen/header_text_size_xlarge" />
         <TextView
             android:id="@+id/imperial_metres_label"
             android:layout_width="wrap_content"
@@ -251,17 +251,17 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/half_default_margin"
-            android:layout_marginEnd="@dimen/tri_default_margin"
-            android:layout_marginRight="@dimen/tri_default_margin"
+            android:layout_marginEnd="@dimen/tri_default_margin_xlarge"
+            android:layout_marginRight="@dimen/tri_default_margin_xlarge"
             android:text="@string/metres"
             android:textColor="@color/white"
-            android:textSize="@dimen/standard_text_size" />
+            android:textSize="@dimen/standard_text_size_xlarge" />
         <ImageView
             android:id="@+id/convert_height"
-            android:layout_width="@dimen/convert_width"
-            android:layout_height="@dimen/convert_height"
-            android:layout_marginStart="@dimen/five_default_margin"
-            android:layout_marginLeft="@dimen/five_default_margin"
+            android:layout_width="@dimen/convert_width_xlarge"
+            android:layout_height="@dimen/convert_height_xlarge"
+            android:layout_marginStart="@dimen/five_default_margin_xlarge"
+            android:layout_marginLeft="@dimen/five_default_margin_xlarge"
             android:layout_below="@id/feet_label"
             android:src="@drawable/convert"
             android:clickable="true"
@@ -276,36 +276,36 @@
             android:text="@string/calculate_bmi"
             android:layout_centerHorizontal="true"
             android:textColor="@color/white"
-            android:textSize="@dimen/mid_text_size"
+            android:textSize="@dimen/mid_text_size_xlarge"
             android:layout_marginTop="@dimen/double_default_margin"
             />
         <EditText
             android:id="@+id/height_m"
-            android:layout_width="@dimen/default_box_width"
-            android:layout_height="@dimen/default_box_height"
+            android:layout_width="@dimen/default_box_width_xlarge"
+            android:layout_height="@dimen/default_box_height_xlarge"
             android:layout_below="@id/bmi_header"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/double_default_margin"
-            android:layout_marginEnd="@dimen/tri_default_margin"
+            android:layout_marginEnd="@dimen/tri_default_margin_xlarge"
             android:gravity="center"
-            android:layout_marginRight="@dimen/tri_default_margin"
+            android:layout_marginRight="@dimen/tri_default_margin_xlarge"
             android:background="@color/white"
             android:hint="@string/height_m"
             android:importantForAutofill="no"
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
-            android:textSize="@dimen/smallest_text_size" />
+            android:textSize="@dimen/default_text_size_large" />
 
         <EditText
             android:id="@+id/weight_kg"
-            android:layout_width="@dimen/default_box_width"
-            android:layout_height="@dimen/default_box_height"
+            android:layout_width="@dimen/default_box_width_xlarge"
+            android:layout_height="@dimen/default_box_height_xlarge"
             android:layout_below="@id/bmi_header"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginStart="@dimen/quad_default_margin"
-            android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginStart="@dimen/quad_default_margin_xlarge"
+            android:layout_marginLeft="@dimen/quad_default_margin_xlarge"
             android:layout_marginTop="@dimen/double_default_margin"
             android:background="@color/white"
             android:gravity="center"
@@ -314,15 +314,15 @@
             android:inputType="text|numberDecimal"
             android:textColor="@color/black"
             android:textColorHint="#78909C"
-            android:textSize="@dimen/smallest_text_size"
+            android:textSize="@dimen/default_text_size_large"
             tools:ignore="DuplicateSpeakableTextCheck" />
         <TextView
             android:id="@+id/weight_kg_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/weight_kg"
-            android:layout_marginStart="@dimen/quad_default_margin"
-            android:layout_marginLeft="@dimen/quad_default_margin"
+            android:layout_marginStart="@dimen/quad_default_margin_xlarge"
+            android:layout_marginLeft="@dimen/quad_default_margin_xlarge"
             android:layout_marginTop="@dimen/half_default_margin"
             android:text="@string/weight_kg"
             android:textColor="@color/white"
@@ -335,28 +335,28 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/half_default_margin"
-            android:layout_marginEnd="@dimen/quad_default_margin"
-            android:layout_marginRight="@dimen/quad_default_margin"
+            android:layout_marginEnd="@dimen/quad_default_margin_xlarge"
+            android:layout_marginRight="@dimen/quad_default_margin_xlarge"
             android:text="@string/height_m"
             android:textColor="@color/white"
-            android:textSize="@dimen/standard_text_size" />
+            android:textSize="@dimen/standard_text_size_xlarge" />
         <TextView
             android:id="@+id/bmi_textview"
-            android:layout_width="@dimen/bmi_box_width"
-            android:layout_height="@dimen/bmi_box_height"
+            android:layout_width="@dimen/bmi_box_width_xlarge"
+            android:layout_height="@dimen/bmi_box_height_xlarge"
             android:layout_below="@id/height_m_label"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/double_default_margin"
-            android:layout_marginEnd="@dimen/double_default_margin"
-            android:layout_marginRight="@dimen/double_default_margin"
+            android:layout_marginEnd="@dimen/double_default_margin_xlarge"
+            android:layout_marginRight="@dimen/double_default_margin_xlarge"
             android:background="@color/white"
-            android:gravity="center_horizontal"
+            android:gravity="center_vertical"
             android:text="@string/number"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="@dimen/header_text_size" />
+            android:textSize="@dimen/header_text_size_xlarge" />
         <TextView
             android:id="@+id/bmi_label"
             android:layout_width="wrap_content"
@@ -365,17 +365,17 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/half_default_margin"
-            android:layout_marginEnd="@dimen/tri_default_margin"
-            android:layout_marginRight="@dimen/tri_default_margin"
+            android:layout_marginEnd="@dimen/tri_default_margin_xlarge"
+            android:layout_marginRight="@dimen/tri_default_margin_xlarge"
             android:text="@string/bmi"
             android:textColor="@color/white"
-            android:textSize="@dimen/standard_text_size" />
+            android:textSize="@dimen/standard_text_size_xlarge" />
         <ImageView
             android:id="@+id/convert_bmi"
-            android:layout_width="@dimen/mid_calculate_width"
-            android:layout_height="@dimen/mid_calculate_height"
-            android:layout_marginStart="@dimen/tri_default_margin"
-            android:layout_marginLeft="@dimen/tri_default_margin"
+            android:layout_width="@dimen/mid_calculate_width_xlarge"
+            android:layout_height="@dimen/mid_calculate_height_xlarge"
+            android:layout_marginStart="@dimen/tri_default_margin_xlarge"
+            android:layout_marginLeft="@dimen/tri_default_margin_xlarge"
             android:layout_below="@id/weight_kg_label"
             android:src="@drawable/calculate"
             android:clickable="true"
@@ -385,15 +385,13 @@
 
         <ImageView
             android:id="@+id/menu_bmi_main"
-            android:layout_width="@dimen/menu_button_size"
-            android:layout_height="@dimen/menu_button_size"
+            android:layout_width="@dimen/menu_button_size_xlarge"
+            android:layout_height="@dimen/menu_button_size_xlarge"
             android:layout_below="@id/bmi_label"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="@dimen/double_default_padding"
-            android:layout_marginLeft="@dimen/double_default_padding"
             android:layout_marginTop="@dimen/double_default_padding"
-            android:layout_marginEnd="@dimen/double_default_padding"
-            android:layout_marginRight="@dimen/double_default_padding"
+
+
             android:layout_marginBottom="@dimen/double_default_padding"
             android:contentDescription="@string/menu_link_bmi"
             android:clickable="true"

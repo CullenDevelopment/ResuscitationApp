@@ -15,9 +15,9 @@
             android:layout_height="wrap_content"
             android:text="@string/flacc_header"
             android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/default_margin"
+            android:layout_margin="@dimen/default_margin_large"
             android:textColor="@color/white"
-            android:textSize="@dimen/header_text_size"/>
+            android:textSize="@dimen/header_text_size_large"/>
 
         <TextView
             android:id="@+id/explain_flacc"
@@ -46,13 +46,13 @@
             android:id="@+id/face_section"
             android:layout_below="@id/explain_flacc2"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/double_default_margin"
-            android:layout_marginStart="@dimen/double_default_margin"
-            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin_large"
+            android:layout_marginStart="@dimen/double_default_margin_large"
+            android:layout_marginTop="@dimen/default_margin_large"
             android:layout_width="wrap_content"
             android:text="@string/face_section_text"
             android:textColor="@color/white"
-            android:textSize="@dimen/default_text_size" />
+            android:textSize="@dimen/default_text_size_large" />
 
         <RadioGroup
             android:id="@+id/face_group"
@@ -65,37 +65,37 @@
                 android:id="@+id/no_expression"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/no_expression_smile"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
             <RadioButton
                 android:id="@+id/grimace_frown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/grimace"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
             <RadioButton
                 android:id="@+id/clenched_jaw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/clenched_jaw"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
 
         </RadioGroup>
@@ -104,13 +104,13 @@
             android:id="@+id/legs_section"
             android:layout_below="@id/face_group"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/double_default_margin"
-            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin_large"
+            android:layout_marginStart="@dimen/double_default_margin_large"
             android:layout_marginTop="@dimen/default_margin"
             android:layout_width="wrap_content"
             android:text="@string/legs_section_text"
             android:textColor="@color/white"
-            android:textSize="@dimen/default_text_size" />
+            android:textSize="@dimen/default_text_size_large" />
 
         <RadioGroup
             android:id="@+id/legs_group"
@@ -123,37 +123,37 @@
                 android:id="@+id/normal_position"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/relaxed"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
             <RadioButton
                 android:id="@+id/uneasy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/restless"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
             <RadioButton
                 android:id="@+id/kicking"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/kicking"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
 
 
@@ -164,13 +164,13 @@
             android:id="@+id/activity_section"
             android:layout_below="@id/legs_group"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/double_default_margin"
-            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin_large"
+            android:layout_marginStart="@dimen/double_default_margin_large"
             android:layout_marginTop="@dimen/default_margin"
             android:layout_width="wrap_content"
             android:text="@string/activity_section"
             android:textColor="@color/white"
-            android:textSize="@dimen/default_text_size" />
+            android:textSize="@dimen/default_text_size_large" />
 
         <RadioGroup
             android:id="@+id/activity_group"
@@ -183,37 +183,37 @@
                 android:id="@+id/lying_quietly"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/lying_quietly"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
             <RadioButton
                 android:id="@+id/squirming"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/squirming"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
             <RadioButton
                 android:id="@+id/rigid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/arched"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
         </RadioGroup>
 
@@ -221,13 +221,13 @@
             android:id="@+id/cry_section"
             android:layout_below="@id/activity_group"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/double_default_margin"
-            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin_large"
+            android:layout_marginStart="@dimen/double_default_margin_large"
             android:layout_marginTop="@dimen/default_margin"
             android:layout_width="wrap_content"
             android:text="@string/cry_section_text"
             android:textColor="@color/white"
-            android:textSize="@dimen/default_text_size" />
+            android:textSize="@dimen/default_text_size_large" />
 
         <RadioGroup
             android:id="@+id/cry_group"
@@ -240,37 +240,37 @@
                 android:id="@+id/no_cry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/no_cry"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
             <RadioButton
                 android:id="@+id/whimpers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/moans"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
             <RadioButton
                 android:id="@+id/crying_steadily"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/crying_steadily"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
         </RadioGroup>
 
@@ -278,13 +278,13 @@
             android:id="@+id/consolability_section"
             android:layout_below="@id/cry_group"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/double_default_margin"
-            android:layout_marginStart="@dimen/double_default_margin"
+            android:layout_marginLeft="@dimen/double_default_margin_large"
+            android:layout_marginStart="@dimen/double_default_margin_large"
             android:layout_marginTop="@dimen/default_margin"
             android:layout_width="wrap_content"
             android:text="@string/consolability_section_text"
             android:textColor="@color/white"
-            android:textSize="@dimen/default_text_size" />
+            android:textSize="@dimen/default_text_size_large" />
 
         <RadioGroup
             android:id="@+id/consolability_group"
@@ -297,37 +297,37 @@
                 android:id="@+id/content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/content"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
             <RadioButton
                 android:id="@+id/distractible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/distractible"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
             <RadioButton
                 android:id="@+id/difficult_to_console"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_margin"
-                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin_large"
+                android:layout_marginLeft="@dimen/default_margin_large"
                 android:layout_marginTop="@dimen/default_margin"
                 android:minHeight="48dp"
                 android:text="@string/difficult_to_console"
                 android:textColor="@color/white"
-                android:textSize="@dimen/small_text_size_gcs" />
+                android:textSize="@dimen/small_text_size_gcs_large" />
 
         </RadioGroup>
 
@@ -335,21 +335,21 @@
             android:id="@+id/score_flacc"
             android:layout_below="@id/consolability_group"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/quad_default_margin"
-            android:layout_marginStart="@dimen/quad_default_margin"
+            android:layout_marginLeft="@dimen/quad_default_margin_large"
+            android:layout_marginStart="@dimen/quad_default_margin_large"
             android:layout_marginTop="@dimen/default_margin"
             android:layout_width="wrap_content"
             android:text="@string/flacc_score"
             android:textColor="@color/white"
-            android:textSize="@dimen/default_text_size" />
+            android:textSize="@dimen/default_text_size_large" />
 
         <TextView
             android:id="@+id/score_box_flacc"
-            android:layout_width="@dimen/smaller_box_width"
-            android:layout_height="@dimen/default_box_height"
+            android:layout_width="@dimen/smaller_box_width_large"
+            android:layout_height="@dimen/default_box_height_large"
             android:layout_below="@id/consolability_group"
             android:layout_gravity="center_horizontal"
-            android:layout_marginRight="@dimen/quad_default_margin"
+            android:layout_marginRight="@dimen/quad_default_margin_large"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="8dp"
             android:background="@color/white"
@@ -357,8 +357,8 @@
             android:text="@string/int_number"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="@dimen/header_text_size"
-            android:layout_marginEnd="@dimen/quad_default_margin"
+            android:textSize="@dimen/header_text_size_large"
+            android:layout_marginEnd="@dimen/quad_default_margin_large"
             android:layout_alignParentRight="true" />
 
         <TextView
@@ -370,19 +370,19 @@
             android:layout_marginTop="@dimen/default_margin"
             android:layout_below="@id/score_box_flacc"
             android:layout_marginStart="@dimen/double_default_padding"
-            android:textSize="@dimen/smallest_text_size"
-            android:layout_marginLeft="@dimen/double_default_padding" />
+            android:textSize="@dimen/smallest_text_size_large"
+            android:layout_marginLeft="@dimen/double_default_padding_large" />
 
         <ImageView
             android:id="@+id/reveal_score"
             android:layout_below="@id/explain_score"
             android:layout_toLeftOf="@id/menu_flacc"
             android:clickable="true"
-            android:layout_height="@dimen/menu_button_size"
-            android:layout_marginLeft="@dimen/default_margin"
-            android:layout_marginRight="@dimen/default_margin"
+            android:layout_height="@dimen/menu_button_size_large"
+            android:layout_marginLeft="@dimen/double_default_margin_large"
+            android:layout_marginRight="@dimen/double_default_margin_large"
             android:layout_marginTop="@dimen/double_default_margin"
-            android:layout_width="@dimen/menu_button_size"
+            android:layout_width="@dimen/menu_button_size_large"
             android:src="@drawable/calculate_flacc"
             android:focusable="true"
             android:contentDescription="@string/menu_link"
@@ -391,15 +391,12 @@
 
         <ImageView
             android:id="@+id/menu_flacc"
-            android:layout_width="@dimen/menu_button_size"
-            android:layout_height="@dimen/menu_button_size"
+            android:layout_width="@dimen/menu_button_size_large"
+            android:layout_height="@dimen/menu_button_size_large"
             android:layout_below="@id/explain_score"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="@dimen/double_default_padding"
-            android:layout_marginLeft="@dimen/double_default_padding"
+            android:layout_marginLeft="@dimen/double_default_margin_large"
             android:layout_marginTop="@dimen/double_default_padding"
-            android:layout_marginEnd="@dimen/double_default_padding"
-            android:layout_marginRight="@dimen/double_default_padding"
             android:layout_marginBottom="@dimen/double_default_padding"
             android:clickable="true"
             android:contentDescription="@string/menu_flacc_index"

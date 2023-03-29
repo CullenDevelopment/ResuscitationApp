@@ -11,31 +11,23 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/quad_default_margin"
-        android:text="@string/bsa"
+        android:text="@string/bsa_calculator_long_text"
         android:textColor="@color/white"
-        android:textSize="@dimen/header_text_size" />
+        android:textSize="@dimen/header_text_size_large" />
 
-    <TextView
-        android:id="@+id/bsa_calculator2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/bsa_calculator1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/half_default_margin"
-        android:text="@string/calculator"
-        android:textColor="@color/white"
-        android:textSize="@dimen/header_text_size" />
+
+
 
     <EditText
         android:id="@+id/bsa_height_cm"
-        android:layout_width="@dimen/default_box_width"
-        android:layout_height="@dimen/default_box_height"
-        android:layout_below="@id/bsa_calculator2"
+        android:layout_width="@dimen/default_box_width_large"
+        android:layout_height="@dimen/default_box_height_large"
+        android:layout_below="@id/bsa_calculator1"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="@dimen/quad_default_margin"
-        android:layout_marginEnd="@dimen/tri_default_margin"
-        android:layout_marginRight="@dimen/tri_default_margin"
+        android:layout_marginEnd="@dimen/quad_default_margin_xlarge"
+        android:layout_marginRight="@dimen/quad_default_margin_xlarge"
         android:background="@color/white"
         android:gravity="center"
         android:hint="@string/height_cm"
@@ -43,18 +35,18 @@
         android:inputType="text|numberDecimal"
         android:textColor="@color/black"
         android:textColorHint="#00838F"
-        android:textSize="@dimen/smallest_text_size"
+        android:textSize="@dimen/smallest_text_size_large"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <EditText
         android:id="@+id/bsa_weight_kg"
-        android:layout_width="@dimen/default_box_width"
-        android:layout_height="@dimen/default_box_height"
-        android:layout_below="@id/bsa_calculator2"
+        android:layout_width="@dimen/default_box_width_large"
+        android:layout_height="@dimen/default_box_height_large"
+        android:layout_below="@id/bsa_calculator1"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="@dimen/quad_default_margin"
-        android:layout_marginLeft="@dimen/quad_default_margin"
+        android:layout_marginStart="@dimen/quad_default_margin_large"
+        android:layout_marginLeft="@dimen/quad_default_margin_large"
         android:layout_marginTop="@dimen/quad_default_margin"
         android:background="@color/white"
         android:gravity="center"
@@ -63,19 +55,19 @@
         android:inputType="text|numberDecimal"
         android:textColor="@color/black"
         android:textColorHint="#00838F"
-        android:textSize="@dimen/smallest_text_size"
+        android:textSize="@dimen/smallest_text_size_large"
         tools:ignore="DuplicateSpeakableTextCheck" />
     <TextView
         android:id="@+id/bsa_weight_kg_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/bsa_weight_kg"
-        android:layout_marginStart="@dimen/quad_default_margin"
-        android:layout_marginLeft="@dimen/quad_default_margin"
+        android:layout_marginStart="@dimen/quad_default_margin_large"
+        android:layout_marginLeft="@dimen/quad_default_margin_large"
         android:layout_marginTop="@dimen/half_default_margin"
         android:text="@string/weight_kg"
         android:textColor="@color/white"
-        android:textSize="@dimen/standard_text_size" />
+        android:textSize="@dimen/standard_text_size_large" />
     <TextView
         android:id="@+id/bsa_height_cm_label"
         android:layout_width="wrap_content"
@@ -84,41 +76,41 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="@dimen/half_default_margin"
-        android:layout_marginEnd="@dimen/quad_default_margin"
-        android:layout_marginRight="@dimen/quad_default_margin"
+        android:layout_marginEnd="@dimen/five_default_margin_large"
+        android:layout_marginRight="@dimen/five_default_margin_large"
         android:text="@string/height_cm"
         android:textColor="@color/white"
-        android:textSize="@dimen/standard_text_size" />
+        android:textSize="@dimen/standard_text_size_large" />
 
     <ImageView
         android:id="@+id/convert_bsa"
-        android:layout_width="@dimen/mid_calculate_width"
-        android:layout_height="@dimen/mid_calculate_height"
-        android:layout_marginStart="@dimen/tri_default_margin"
-        android:layout_marginLeft="@dimen/tri_default_margin"
+        android:layout_width="@dimen/mid_calculate_width_large"
+        android:layout_height="@dimen/mid_calculate_height_large"
+        android:layout_marginStart="@dimen/tri_default_margin_large"
+        android:layout_marginLeft="@dimen/tri_default_margin_large"
         android:layout_below="@id/bsa_weight_kg_label"
         android:src="@drawable/calculate"
         android:clickable="true"
         android:focusable="true"
-        android:layout_marginTop="@dimen/double_default_margin"
+        android:layout_marginTop="@dimen/double_default_margin_large"
         android:contentDescription="@string/convert_image_bsa" />
     <TextView
         android:id="@+id/bsa_textview"
-        android:layout_width="@dimen/bmi_box_width"
-        android:layout_height="@dimen/bmi_box_height"
+        android:layout_width="@dimen/bmi_box_width_large"
+        android:layout_height="@dimen/bmi_box_height_large"
         android:layout_below="@id/bsa_height_cm_label"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/double_default_margin"
-        android:layout_marginEnd="@dimen/double_default_margin"
-        android:layout_marginRight="@dimen/double_default_margin"
+        android:layout_marginEnd="@dimen/tri_default_margin_large"
+        android:layout_marginRight="@dimen/tri_default_margin_large"
         android:background="@color/white"
         android:gravity="center_vertical"
         android:text="@string/number"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="@dimen/header_text_size" />
+        android:textSize="@dimen/header_text_size_large" />
     <TextView
         android:id="@+id/bsa_label"
         android:layout_width="wrap_content"
@@ -127,24 +119,20 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="@dimen/half_default_margin"
-        android:layout_marginEnd="@dimen/double_default_margin"
-        android:layout_marginRight="@dimen/double_default_margin"
+        android:layout_marginEnd="@dimen/tri_default_margin_large"
+        android:layout_marginRight="@dimen/tri_default_margin_large"
         android:text="@string/bsa_m2"
         android:textColor="@color/white"
-        android:textSize="@dimen/standard_text_size" />
+        android:textSize="@dimen/standard_text_size_large" />
 
     <ImageView
         android:id="@+id/menu_bsa"
-        android:layout_width="@dimen/menu_button_size"
-        android:layout_height="@dimen/menu_button_size"
+        android:layout_width="@dimen/menu_button_size_large"
+        android:layout_height="@dimen/menu_button_size_large"
         android:layout_below="@id/bsa_label"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="@dimen/quad_default_margin"
-        android:layout_marginLeft="@dimen/quad_default_margin"
-        android:layout_marginTop="@dimen/quad_default_margin"
-        android:layout_marginEnd="@dimen/quad_default_margin"
-        android:layout_marginRight="@dimen/quad_default_margin"
-        android:layout_marginBottom="@dimen/quad_default_margin"
+        android:layout_marginTop="@dimen/double_default_margin"
+        android:layout_marginBottom="@dimen/double_default_margin"
         android:contentDescription="@string/menu_bsa_index"
         android:clickable="true"
         android:focusable="true"

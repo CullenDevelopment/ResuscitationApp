@@ -7,6 +7,8 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -212,6 +214,7 @@ public class PgcsActivity extends AppCompatActivity implements View.OnClickListe
         }
 
 
+
     }
 
 
@@ -224,6 +227,16 @@ public class PgcsActivity extends AppCompatActivity implements View.OnClickListe
     //Actually adds the scores
     public void get_score (View view){
         // Eyes open to radio buttons
+
+        if(eye_opening_group.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(getApplicationContext(), "Please select an option from 'Eye opens to' section.", Toast.LENGTH_SHORT).show();
+        }
+        if(verbal_response_group.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(getApplicationContext(), "Please select an option from verbal response section.", Toast.LENGTH_SHORT).show();
+        }
+        if(motor_response_group.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(getApplicationContext(), "Please select an option from motor response section.", Toast.LENGTH_SHORT).show();
+        }
         if(spontaneously.isChecked()){
             score += 4;
         }
@@ -271,6 +284,7 @@ public class PgcsActivity extends AppCompatActivity implements View.OnClickListe
         if(no_response_pain.isChecked()){
             score += 1;
         }
+
         scoreDisplay(score);
 
         score = 0;

@@ -7,6 +7,8 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -234,9 +236,25 @@ public class FlaccActivity extends AppCompatActivity implements View.OnClickList
     }
 
     //Actually adds the scores
-    public void get_score (View view){
+    public void get_score(View view){
         // face_group to radio buttons
         //no_expression not included because if checked it does not add to score
+
+        if(face_group.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(getApplicationContext(), "Please select an option from the Face section.", Toast.LENGTH_SHORT).show();
+        }
+        if(legs_group.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(getApplicationContext(), "Please select an option from the Legs section.", Toast.LENGTH_SHORT).show();
+        }
+        if(activity_group.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(getApplicationContext(), "Please select an option from the Activity section.", Toast.LENGTH_SHORT).show();
+        }
+        if(cry_group.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(getApplicationContext(), "Please select an option from the Cry section.", Toast.LENGTH_SHORT).show();
+        }
+        if(consolability_group.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(getApplicationContext(), "Please select an option from the Consolability section.", Toast.LENGTH_SHORT).show();
+        }
         if(grimace_frown.isChecked()){
             score += 1;
         }
